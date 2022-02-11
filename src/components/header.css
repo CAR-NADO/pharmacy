@@ -1,0 +1,16 @@
+p {
+    color: red;
+    margin: 0;
+}
+.header {
+    border: 1px solid orange;
+    padding: 0.5rem 5rem;
+    display:flex;
+    justify-content: space-between;
+}
+.left-header {
+    border: 1px solid black;
+}
+.right-header {
+    border: 1px solid red;
+}
