@@ -1,0 +1,110 @@
+.how-its-work-subHeader {
+    border: 1px solid blue;
+    height: 7.5rem;
+    /* border-bottom: 1px solid gainsboro; */
+    padding: 2rem 6rem;
+    display: flex;
+    align-items: center;
+}
+.how-its-work-upper-part {
+    border: 1px solid orangered;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.how-its-work-left-image {
+    border: 1px solid blue;
+}
+.how-its-work-select-items-div {
+    /* border: 1px solid red; */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: rgb(235, 235, 235);
+    width: 12rem;
+    height: 3.2rem;
+}
+.select-items {
+    width: 11rem;
+    height: 3.2rem;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    outline-width: 0;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 1rem;
+    background-color: rgb(235, 235, 235);
+}
+/* .how-its-work-input {
+    width: 20rem;
+    height: 3rem;
+} */
+.howItsWorkInput {
+    width: 32rem;
+    height: 3.2rem;
+    font-size: 18px;
+    outline-width: 0;
+    border: none;
+    margin-left: 1rem;
+}
+.how-its-work-search-icon {
+    /* border: 1px solid orangered; */
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(3, 238, 3);
+    width: 4rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.howItsWorkSearchIcon {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+.how-its-work-search-icon:hover {
+    color: rgb(2, 212, 2);
+}
+.how-its-work-sub-header-right-part{
+    border: 1px solid rgb(233, 233, 233);
+    margin: 1rem 0;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.how-its-work-lower-part-parent-div{
+    border: 1px solid rgb(238, 58, 8);
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    padding: 0 5.5rem;
+    /* position: sticky; 
+    top: 10px; */
+    background-color: rgb(201, 226, 218);
+}
+.how-its-work-lower-part-container-div {
+    border: 1px solid rgb(35, 238, 8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.how-its-work-lower-part-middle span {
+    margin-right: 1rem;
+    font-weight: 500;
+    font-size: 17px;
+}
+.how-its-work-spanHome {
+    color: rgb(10, 10, 10) ;
+    font-size: 17px;
+    font-weight: 500;
+}
+.how-its-work-lower-part-container-div span:hover{
+    color: rgb(2, 212, 2);
+    cursor: pointer;
+}

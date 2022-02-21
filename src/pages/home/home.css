@@ -1,0 +1,115 @@
+.belowShopImage{
+    /* border: 1px solid black; */
+    height: 11rem;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.card {
+    border: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 10px;
+    height: 6rem;
+    width: 17rem;
+    margin: 0 15px 0;
+    
+}
+.LocalShippingIcon {
+    color: gray;
+    cursor: pointer;
+}
+.LocalShippingIcon:hover {
+    color: rgb(2, 212, 2) ;
+}
+.cardMiddleIcon{
+    /* border: 1px solid blue; */
+    margin: 0 8px 0;
+}
+.removeIcon {
+    color: rgb(2, 212, 2) ;
+}
+.fastShipping:hover {
+    color: rgb(2, 212, 2) ;
+    cursor: pointer;
+}
+.US-to-US {
+    color: grey;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.pharma-logo-2{
+    /* border: 1px solid black; */
+    height: 24rem;
+}
+.pharmaLogo2{
+    width: 100%;
+}
+.usBestOnline {
+    /* border: 1px solid black; */
+    padding: 1.6rem;
+}
+.usBestOnline h1 {
+    font-weight: 600;
+    font-size: 33px;
+    color: rgb(46, 46, 46);
+}
+.usBestOnlineContainer {
+    /* border: 1px solid black; */
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.paragraph-1 {
+    /* border: 1px solid red; */
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+.paragraph-1 p {
+    font-size: 15px;
+    color: rgb(114, 113, 113);
+}
+.paragraph-1 span {
+    color: rgb(2, 212, 2) ;
+    font-weight: 700;
+}
+.paragraph-1 span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.paragraph-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.paragraph-2 p {
+    font-size: 15px;
+    color: rgb(114, 113, 113);
+}
+.paragraph-2 span {
+    color: rgb(19, 34, 246);
+    font-weight: 700;
+}
+.paragraph-3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5rem;
+}
+.paragraph-3 p {
+    font-size: 15px;
+    color: rgb(114, 113, 113);
+}
+.pharma-logo-4 {
+    display: flex;
+    justify-content: center;
+}
+.pharma-logo-5 {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+}

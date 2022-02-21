@@ -1,0 +1,60 @@
+.FaClinicMedical {
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: xx-large;
+}
+.font-style {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.font-style:hover {
+    color: rgb(2, 189, 2);
+    cursor: pointer;
+}
+.p-font-style {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.header {
+    /* border: 1px solid orange; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+.left-header {
+    border-right: 1px solid white;
+    text-align: right;
+    padding: 0.7rem;
+    width: 26%;
+}
+.middle-header {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 57.5%;
+}
+.icons {
+    display:flex;
+}
+.icon {
+    color: white;
+    margin-left: 5px;
+}
+.icon:hover {
+    color: rgb(2, 189, 2);
+    cursor: pointer;
+}
+.right-header {
+    border-left: 1px solid white;
+    padding: 0.6rem;
+    width: 16.5%;
+}

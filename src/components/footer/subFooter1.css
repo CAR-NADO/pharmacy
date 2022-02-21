@@ -1,0 +1,46 @@
+.SubFooter1-parent {
+    /* border: 1px solid red; */
+    padding: 1rem 5rem;
+}
+.subFooter1 {
+    /* border: 1px solid rgb(0, 26, 255); */
+}
+.subFooter1-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.subFooter1-header {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.subFooter1-header p {
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(26, 25, 25);
+}
+.subFooter1-card {
+    /* border: 1px solid rgb(212, 209, 2); */
+    width: 32%;
+    height: 8rem;
+    margin: 2rem 0;
+}
+.subFooter1-card-heading {
+    display: flex;
+    justify-content: center;
+    /* padding: 0.5rem 0; */
+}
+.subFooter1-card-heading p{
+    font-weight: 600;
+    color: rgb(26, 25, 25);
+}
+.subFooter1-card-paragraph {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.subFooter1-card-paragraph p {
+    font-weight: 400;
+    color: rgb(78, 184, 68);
+}

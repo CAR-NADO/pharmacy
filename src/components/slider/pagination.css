@@ -1,0 +1,55 @@
+.pagination-parent {
+    /* border: 1px solid black; */
+    background-color: rgb(245, 244, 244);
+    height: 38rem;
+    padding: 2rem 5rem;
+}
+.pagination {
+    /* border: 1px solid green; */
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+.pagination-header {
+    /* border: 1px solid rgb(0, 30, 128); */
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.underline {
+    border-bottom:2px solid rgb(214, 214, 214);
+    width: 110px;
+    margin-top: 1rem;
+}
+.pagination-footer {
+    /* border: 1px solid rgb(158, 4, 150); */
+    height: 80%;
+    padding: 2rem 8rem ;
+}
+.pagination-footer .message {
+    margin-top: 1rem;
+    font-size: 18px;
+    color: rgb(139, 139, 139);
+}
+.pagination-footer .name {
+    margin-top: 1rem;
+    font-size: 19px;
+    font-weight: 600;
+}
+.pagination-footer .name:hover {
+    cursor: pointer;
+    color: rgba(3, 190, 3, 0.74);
+}
+.pagination-footer .quotes {
+    font-size: 25px;
+    margin-top: 1rem;
+    color: rgba(3, 190, 3, 0.74);
+}
+.pagination-footer .fillStar {
+    font-size: 15px;
+    color: rgba(3, 190, 3, 0.74);
+    margin-top: 3rem;
+}

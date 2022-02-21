@@ -1,0 +1,498 @@
+.container {
+    /* border: 1px solid green; */
+}
+.parent-div {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.parent-div-head {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parentDivHead {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(41, 41, 41);
+}
+.horizontalIcon {
+    border-bottom: 3px solid rgb(211, 210, 210);
+    width: 105px;
+}
+.firt-paragraph {
+    /* border: 1px solid orangered; */
+    padding: 0 5rem;
+}
+.firstParagraph {
+    /* border: 1px solid brown; */
+    margin-bottom: 2rem;
+}
+.firstParagraph p {
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.firstParagraph .span1 {
+    color: rgb(3, 200, 3);
+}
+.firstParagraph .span2 {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.first-paragraph-ul-list ul li {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+}
+.first-paragraph-footer p {
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.first-paragraph-footer span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+/* .second-paragraph {
+    border: 1px solid orangered;
+} */
+.second-paragraph-header {
+    padding: 1rem 5rem;
+}
+.second-paragraph-header h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(41, 41, 41);
+}
+.secondParagraph {
+    padding: 0 5rem;
+}
+.secondParagraph p {
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.secondParagraphImg {
+    padding: 1.5rem 5rem;
+    width: 100%;
+}
+.second-paragraph-footer {
+    padding: 0 5rem;
+}
+.second-paragraph-footer p {
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.second-paragraph-ul-list {
+    padding: 0 6rem;
+}
+.second-paragraph-ul-list ul li {
+    padding: 0.5rem 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+}
+.third-paragraph {
+    /* border: 1px solid orangered; */
+    /* padding: 0 5rem; */
+}
+.third-paragraph-header h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(41, 41, 41);
+}
+.third-paragraph-header {
+    padding: 1rem 5rem;
+}
+.thirdParagraph1 {
+    padding: 0 5rem;
+}
+.thirdParagraph1 p {
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.thirdParagraph2 p {
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.thirdParagraph2 {
+    padding: 1rem 5rem;
+}
+
+.third-paragraph-footer1 {
+    padding: 0.50rem 5rem;
+}
+.third-paragraph-footer1 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.third-paragraph-footer1 p {
+    font-size: 15px;
+    color: rgb(73, 73, 73);;
+}
+.third-paragraph-footer2 p {
+    font-size: 15px;
+    color: rgb(73, 73, 73);;
+}
+.third-paragraph-footer3 p {
+    font-size: 15px;
+    color: rgb(73, 73, 73);;
+}
+.third-paragraph-footer2 {
+    padding: 0.50rem 5rem;
+}
+.third-paragraph-footer3 {
+    padding: 0.50rem 5rem;
+}
+.third-paragraph-ul-list {
+    padding: 0 6rem;
+}
+.third-paragraph-ul-list ul li {
+    padding: 0.5rem 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+}
+.fourth-paragraph {
+    /* border: 1px solid orangered; */
+    /* padding: 0 5rem; */
+}
+.fourth-paragraph-header {
+    padding: 1rem 5rem;
+}
+.fourth-paragraph-header h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(41, 41, 41);
+}
+.fourthParagraph1 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.fourthParagraph1 .span1 {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.fourthParagraph1 .span2 {
+    color: rgb(2, 212, 2) ;
+    font-weight: 700;
+}
+.fourthParagraph1 .span2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.fourthParagraph2 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.fourthParagraph3 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.fourthParagraph3 span {
+    color: rgb(2, 212, 2) ;
+    font-weight: 700;
+}
+.fourthParagraph3 span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.fourthParagraph4 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.fourthParagraph5 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.fifth-paragraph {
+    /* border: 1px solid orangered; */
+}
+.fifth-paragraph-header {
+    padding: 1rem 5rem;
+}
+.fifth-paragraph-header h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(41, 41, 41);
+}
+.fifthParagraph1 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.fifthParagraph2 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.sixth-paragraph {
+    /* border: 1px solid orangered; */
+}
+.sixth-paragraph-header {
+    padding: 1rem 5rem;
+}
+.sixth-paragraph-header h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(41, 41, 41);
+}
+.sixthParagraph1 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.sixthParagraph1 span{
+    color: rgb(2, 212, 2) ;
+    font-weight: 700;
+}
+.sixthParagraph1 span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sixthParagraph2 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px
+}
+.sixthParagraph2 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.sixthParagraph3 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px
+}
+.seventh-paragraph {
+    /* border: 1px solid orangered; */
+}
+.seventh-paragraph-header {
+    padding: 1rem 5rem;
+}
+.seventh-paragraph-header h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(41, 41, 41);
+}
+.seventhParagraph1 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px
+}
+.seventhParagraph1 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.seventhParagraph2 {
+    padding: 0.5rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px
+}
+.seventhParagraph2 span {
+    color: rgb(2, 212, 2) ;
+    font-weight: 700;
+}
+.seventhParagraph2 span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.seventh-paragraph-ul-list {
+    padding: 0 6rem;
+}
+.seventh-paragraph-ul-list ul li {
+    padding: 0.5rem 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(28, 51, 250);
+}
+.eighth-paragraph {
+    /* border: 1px solid orangered; */
+}
+.eighth-paragraph-header {
+    text-decoration: underline;
+    padding: 0 5rem;
+}
+.eighth-paragraph-header h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 34px;
+    color: rgb(41, 41, 41);
+}
+.eighthParagraph1 {
+    padding: 1rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.eighth-paragraph-ol-list {
+    padding: 0 6rem;
+}
+.eighth-paragraph-ol-list ol li {
+    padding: 0.5rem 0;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px
+}
+.eighth-paragraph-ol-list ol li span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.eighth-paragraph-ol-list ol li .span1 {
+    color: rgb(2, 212, 2) ;
+    font-weight: 700;
+}
+.eighth-paragraph-ol-list ol li .span1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.nineth-paragraph {
+    /* border: 1px solid orangered; */
+}
+.nineth-paragraph-header {
+    text-decoration: underline ;
+    /* border-bottom: 2px solid black; */
+    padding: 0 5rem;
+}
+.nineth-paragraph-header h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(49, 49, 49);
+}
+.ninethParagraph1 {
+    padding: 1rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.ninethParagraph1 p {
+    border-bottom:1px solid rgb(231, 231, 231);
+}
+.tenth-paragraph {
+    /* border: 1px solid orangered; */
+}
+.tenth-paragraph-header {
+    text-decoration: underline ;
+    padding: 0 5rem;
+}
+.tenth-paragraph-header h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 34px;
+    color: rgb(41, 41, 41);
+}
+.left-side-text-right-side-image {
+    /* border: 1px solid green; */
+    display: flex;
+}
+.left-side-text {
+    /* border: 1px solid blue; */
+    width: 70%;
+}
+.right-side-image {
+    /* border: 1px solid rgb(0, 163, 28); */
+    width: 30%; 
+}
+.rightSideImg {
+    width: 21rem;
+    height: 21rem;
+}
+.tenthParagraph1 {
+    padding: 0.8rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.tenthParagraph2 {
+    padding: 0.8rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.tenthParagraph3 {
+    padding: 0.8rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.tenthParagraph4 {
+    padding: 0.8rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.tenthParagraph5 {
+    padding: 0.8rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.tenthParagraph6 {
+    padding: 0.8rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.tenthParagraph7 {
+    padding: 0.8rem 5rem;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 0.5px;
+}
+.tenthParagraph1 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.tenthParagraph2 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.tenthParagraph3 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.tenthParagraph4 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.tenthParagraph5 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.tenthParagraph6 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.tenthParagraph7 span {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+.eleventh-paragraph-img {
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 2rem 5rem;
+    justify-content: space-between;
+}
