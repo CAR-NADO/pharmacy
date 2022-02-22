@@ -1,0 +1,15 @@
+.contact-us-container-div {
+  border: 1px solid red;
+  height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 6rem;
+}
+
+.contact-us-left-content-div {
+  border: 1px solid rgb(0, 4, 255);
+}
+.contact-us-middle-content-div {
+  display: flex;
+  flex-direction: column;
+}

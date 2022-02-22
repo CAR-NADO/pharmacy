@@ -33,7 +33,7 @@
 }
 .lower-part{
     border: 1px solid rgb(255, 51, 0);
-    height: 3rem;
+    height: 3.5rem;
     display: flex;
     justify-content: center;
     position: sticky; 
@@ -45,6 +45,14 @@
     font-weight: 600;
     font-size: 17px;
     cursor:pointer ;
+}
+.lower-part .navLink {
+    color: black;
+    text-decoration: none;
+}
+.lower-part .isActive {
+    color: rgb(2, 212, 2);
+    text-decoration: none;
 }
 .spanHome {
     color: rgb(2, 212, 2) ;
