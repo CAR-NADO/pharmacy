@@ -1,45 +1,49 @@
 .belowShopImage{
     /* border: 1px solid black; */
-    height: 11rem;
+    height: 15rem;
     display: flex;
     align-items: center;
-    padding: 0 10px;
     justify-content: space-between;
 }
-.card {
-    border: 1px solid gainsboro;
+.home-page-card {
+    /* border: 1px solid blue; */
+    border: 1px solid rgb(235, 234, 234);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 10px;
-    height: 6rem;
-    width: 17rem;
-    margin: 0 15px 0;
+    height: 7rem;
+    width: 21rem;
+    margin: 3rem  1rem;
     
 }
 .LocalShippingIcon {
-    color: gray;
+    color: rgb(87, 87, 87);
     cursor: pointer;
 }
 .LocalShippingIcon:hover {
     color: rgb(2, 212, 2) ;
-}
-.cardMiddleIcon{
-    /* border: 1px solid blue; */
-    margin: 0 8px 0;
+    font-size: 50px;
 }
 .removeIcon {
     color: rgb(2, 212, 2) ;
 }
 .fastShipping:hover {
     color: rgb(2, 212, 2) ;
+    font-size: 20px;
     cursor: pointer;
 }
-.US-to-US {
-    color: grey;
-    letter-spacing: 1px;
-    margin-top: 5px;
+.cardRight h4{
+    font-size: 18px;
+    font-weight: 600;
 }
+.cardRight h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+}
+
+/* ---------second part------- */
+
 .pharma-logo-2{
     /* border: 1px solid black; */
     height: 24rem;

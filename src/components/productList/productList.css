@@ -1,0 +1,176 @@
+/* .product-heading {
+  border: 1px solid red;
+} */
+.parentContainer {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 6rem;
+}
+.headingText {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: rgb(17, 17, 17);
+}
+.medicineList {
+    /* border: 1px solid blue; */
+    margin-bottom: 35px;
+  }
+.product-card {
+  border: 1px solid rgb(60, 207, 2);
+  width: 19rem;
+  height: 22rem;
+  position: relative;
+  /* background-color: lightskyblue; */
+}
+.content {
+  position: relative;
+}
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 86%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+.medicine1 {
+  width: 15.2rem;
+  height: 16.9rem;
+}
+.lowerPart {
+  /* border: 1px solid purple; */
+  height: 14%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+.lowerPartIcon-left {
+  /* border: 1px solid peru; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4rem;
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.lowerPartIcon-left:hover .searchIcon {
+  background-color: black;
+  color: white;
+}
+.lowerPartIcon-left:hover .heartIcon {
+  background-color: black;
+  color: white;
+}
+.lowerPartIcon-left:hover .compareIcon {
+  background-color: black;
+  color: white;
+}
+.lowerPartIcon-left:hover {
+  background-color: black;
+}
+.lowerPartIcon-left .searchIcon {
+  font-size: 18px;
+  font-weight: 600;
+  color: grey;
+}
+.heartIcon {
+  font-size: medium;
+  color: grey;
+}
+.heartIcon:hover {
+  color: white;
+}
+.compareIcon {
+  font-size: medium;
+  color: grey;
+}
+.compareIcon:hover {
+  color: white;
+}
+.cartIcon {
+  font-size: 18px;
+  color: grey;
+}
+.cartIcon:hover {
+  color: white;
+  font-size: 20px;
+}
+.lowerPartIcon-right {
+  /* border: 1px solid peru; */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 8.7rem;
+  cursor: pointer;
+  height: 100%;
+}
+.lowerPartIcon-right:hover .cartIcon {
+  background-color: rgb(11, 230, 11);
+  color: white;
+  font-size: 25px;
+}
+.lowerPartIcon-right:hover .selectOption {
+  background-color: rgb(11, 230, 11);
+  color: white;
+}
+.lowerPartIcon-right:hover {
+  background-color: rgb(11, 230, 11);
+}
+.selectOption {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.selectOption:hover {
+  color: white;
+  font-size: 14px;
+}
+.product-lower-part-link {
+  text-decoration: none;
+  color: black;
+}
+.cardLowerDisc {
+  /* border: 1px solid blue; */
+  text-align: center;
+  width: 15.5rem;
+  height: 7rem;
+}
+.para {
+  margin: 12px;
+}
+.medDisc1 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(172, 169, 169);
+}
+.medDisc2 {
+  font-size: 15px;
+  font-weight: 500;
+  /* color: grey; */
+  letter-spacing: 1px;
+}
+.medDisc3 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(2, 2, 2);
+}
+.cardLowerDisc p .starIcon {
+  font-size: 16px;
+  color: rgb(50, 206, 50);
+}

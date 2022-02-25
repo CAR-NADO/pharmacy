@@ -2,7 +2,8 @@ import React from "react";
 import './processingOrder.css'
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import SubHeader from "../../components/howItsWorksComponents/SubHeader";
+// import SubHeader from "../../components/howItsWorksComponents/SubHeader";
+import SubHeader from '../../components/header/SubHeader';
 import ProcessingOrderImg1 from '../../assets/processing-order-img1/processing-order-img1.png'
 
 const ProcessingOrder = () => {

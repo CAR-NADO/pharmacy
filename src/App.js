@@ -7,6 +7,8 @@ import DeliveryInfo from '../src/pages/deliveryInfo/DeliveryInfo';
 import ProcessingOrder from '../src/pages/processingOder/ProcessingOrder';
 import ContactUs from '../src/pages/contactUs/ContactUs';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PageOne from './pages/cartPages/PageOne';
+import SelectMedi from './pages/cartPages/SelectMedi';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path='/deliveryInfo' element={<DeliveryInfo />} />
         <Route path='/processingOrder' element={<ProcessingOrder />} />
         <Route path='/contactUs' element={<ContactUs />} />
+        <Route path='/pageOne' element={<PageOne />} />
+        <Route path='/selectMedi/:id' element={<SelectMedi />} />
       </Routes>
       </BrowserRouter>
     </div>

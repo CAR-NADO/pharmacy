@@ -1,4 +1,35 @@
-/* .accordion-parent-div {
-  border: 2px solid rgb(255, 153, 0);
-  margin: 0 5rem;
-} */
+.faq-accordion-parent-div {
+  margin: 1rem 6rem;
+}
+.faq-accordion-parent-div h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.faq-accordion-parent-div h4:hover {
+  color: rgb(3, 182, 3);
+}
+.accordion-item {
+  margin: 1.5rem;
+  height: auto;
+}
+.accordion-button {
+  /* border: 1px solid red; */
+  background: rgb(230, 230, 230) !important;
+  border: none;
+  border:none;
+    box-shadow:none;
+}
+.collapsed {
+  border: none;
+}
+.static-accordian-header {
+  border:none;
+    box-shadow:none;
+}
+.accordion-button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+}

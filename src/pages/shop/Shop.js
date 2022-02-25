@@ -1,8 +1,9 @@
-import React from 'react'
-import Footer from '../../components/footer/Footer'
-import Header from '../../components/header/Header'
-import SubHeader from '../../components/howItsWorksComponents/SubHeader'
-import Product from '../../components/ProductList'
+import React from 'react';
+import Footer from '../../components/footer/Footer';
+import Header from '../../components/header/Header';
+// import SubHeader from '../../components/howItsWorksComponents/SubHeader';
+import SubHeader from '../../components/header/SubHeader';
+import Product from '../../components/productList/ProductList';
 
 const Shop = () => {
   return (

@@ -1,7 +1,6 @@
 .how-its-work-subHeader {
     /* border: 1px solid blue; */
     height: 7.5rem;
-    /* border-bottom: 1px solid gainsboro; */
     padding: 2rem 6rem;
     display: flex;
     align-items: center;
@@ -12,9 +11,6 @@
     justify-content: space-between;
     width: 100%;
 }
-/* .how-its-work-left-image {
-    border: 1px solid blue;
-} */
 .how-its-work-select-items-div {
     /* border: 1px solid red; */
     border-top-left-radius: 25px;

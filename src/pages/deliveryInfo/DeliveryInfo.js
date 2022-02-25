@@ -1,9 +1,10 @@
-import React from 'react'
-import './deliveryInfo.css'
-import Footer from '../../components/footer/Footer'
-import Header from '../../components/header/Header'
-import SubHeader from '../../components/howItsWorksComponents/SubHeader'
-import DeliveryInfoImg1 from '../../assets/delivery-info-img/delivery-info-img1.jpg'
+import React from 'react';
+import './deliveryInfo.css';
+import Footer from '../../components/footer/Footer';
+import Header from '../../components/header/Header';
+import SubHeader from '../../components/header/SubHeader';
+// import SubHeader from '../../components/howItsWorksComponents/SubHeader';
+import DeliveryInfoImg1 from '../../assets/delivery-info-img/delivery-info-img1.jpg';
 
 const DeliveryInfo = () => {
   return (

@@ -1,7 +1,8 @@
 import React from "react";
 import "./howItsWork.css";
 import Header from "../../components/header/Header";
-import SubHeader from "../../components/howItsWorksComponents/SubHeader";
+import SubHeader from '../../components/header/SubHeader';
+// import SubHeader from "../../components/howItsWorksComponents/SubHeader";
 import Pagination from "../../components/slider/Pagination";
 import Footer from "../../components/footer/Footer";
 import HowItWorksImg2 from "../../assets/HowItsWork-images/how-it-works-img2.jpg";
