@@ -10,9 +10,9 @@ const SubFooter1 = () => {
             </div>
             <div className="subFooter1-footer">
                 {
-                    [1,2,3].map(()=> {
+                    [1,2,3].map((id)=> {
                         return (
-            <div className="subFooter1-card">
+            <div className="subFooter1-card"key={id}>
             <div className="subFooter1-card-heading">
                 <p>Placing order</p>
             </div>

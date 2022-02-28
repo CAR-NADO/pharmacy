@@ -131,9 +131,9 @@ const DeliveryInfo = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className='delivery-info-img1'>
+        <div className='delivery-info-img1'>
         <img src={DeliveryInfoImg1} alt='image' className='deliveryInfoImg1'/>
+      </div>
       </div>
     <Footer />
   </div>

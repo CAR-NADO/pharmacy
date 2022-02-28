@@ -4,15 +4,18 @@ import Header from '../../components/header/Header';
 // import SubHeader from '../../components/howItsWorksComponents/SubHeader'; 
 import SubHeader from '../../components/header/SubHeader';
 import Footer from '../../components/footer/Footer';
-import CartImg1 from '../../assets/cart-img/cart-img1.jpg';
 import CancelIcon from '@mui/icons-material/Cancel';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import ProductList from '../../components/productList/ProductList';
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 const PageOne = () => {
+  const navigate = useNavigate();
+  const handleClick = ()=> {
+    navigate('/shop')
+  }
+  const {cartItems} = useSelector((state)=> state.cartReducer);
   return (
     <div className='cart-pageOne-parent-div'>
       <Header />
@@ -27,20 +30,25 @@ const PageOne = () => {
             <h2>TOTAL</h2>
           </div>
         </div>
-        <div className='cart-pageOne-div3'>
-          <img src={CartImg1} alt='image' className='cart-img1'/>
-          <p>Buy Adderall Online - 90 pills express</p>
-          <h2>$510.00</h2>
+        {cartItems.map((data)=> {
+          const {id, productImage, name, price} = data.data;
+            return (
+        <div className='cart-pageOne-div3' key={id}>
+          <img src={productImage} alt='image' className='cart-img1'/>
+          <p>{name} - 90 pills express</p>
+          <h2>${price}.00</h2>
           <div className='cart-pageOne-div3-input'>
-            <input type='text' className='cartPageOneDiv3Input' placeholder='0' />
+            <input type='text' className='cartPageOneDiv3Input' placeholder='1' />
             <div className='cart-pageOne-upDown-icon'>
             <ArrowDropUpIcon />
             <ArrowDropDownIcon />
             </div>
           </div>
-          <h2>$510.00</h2>
+          <h2>${price}.00</h2>
           <CancelIcon className='cart-pageOne-cancel-icon' />
         </div>
+        )
+      })}
         <div className='cart-pageOne-div4'>
           <div className='cart-pageOne-div5'>
             <input type='text' placeholder='Coupon code' className='coupon-input-field'/>
@@ -72,7 +80,10 @@ const PageOne = () => {
         </div>
         <div className='cart-pageOne-btn-div'>
         <button className='checkout-btn'>PROCEED TO CHECKOUT</button>
-        <button className='shopping-btn'>CONTINUE SHOPPING</button>
+        {/* <Link to="/shop" className='shopping-btn-link'>
+        </Link> */}
+        <button onClick={handleClick} className='shopping-btn'>CONTINUE SHOPPING</button>
+
         </div>
       </div>
       </div>

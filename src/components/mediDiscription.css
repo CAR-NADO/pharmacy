@@ -23,16 +23,16 @@
   border-bottom: 3px solid rgb(211, 210, 210);
   width: 105px;
 }
-.firt-paragraph {
-  /* border: 1px solid orangered; */
-  padding: 0 5rem;
-}
+/* .firt-paragraph {
+  border: 1px solid orangered;
+  
+} */
 .firstParagraph {
   /* border: 1px solid brown; */
   margin-bottom: 2rem;
 }
 .firstParagraph p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 .firstParagraph .span1 {
@@ -43,14 +43,14 @@
   font-weight: 700;
 }
 .first-paragraph-ul-list ul li {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-bottom: 1rem;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: rgb(75, 75, 75);
 }
 .first-paragraph-footer p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 .first-paragraph-footer span {
@@ -61,7 +61,7 @@
     border: 1px solid orangered;
 } */
 .second-paragraph-header {
-  padding: 1rem 5rem;
+  margin: 2rem 0 2rem 0;
 }
 .second-paragraph-header h1 {
   letter-spacing: 2px;
@@ -69,36 +69,38 @@
   font-size: 35px;
   color: rgb(41, 41, 41);
 }
-.secondParagraph {
-  padding: 0 5rem;
-}
+/* .secondParagraph {
+  
+} */
 .secondParagraph p {
-  font-size: 15px;
+  /* border: 1px solid orangered; */
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 .secondParagraphImg {
-  padding: 1.5rem 5rem;
+  margin: 1rem 0 2rem 0;
   width: 100%;
 }
-.second-paragraph-footer {
-  padding: 0 5rem;
-}
+/* .second-paragraph-footer {
+  
+} */
 .second-paragraph-footer p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
-.second-paragraph-ul-list {
-  padding: 0 6rem;
-}
+/* .second-paragraph-ul-list {
+  
+} */
 .second-paragraph-ul-list ul li {
-  padding: 0.5rem 0;
-  font-size: 15px;
+  /* padding: 0.5rem 0; */
+  margin: 1rem 0 0 0;
+  font-size: 16px;
   font-weight: 400;
   color: rgb(75, 75, 75);
 }
 /* .third-paragraph {
   border: 1px solid orangered;
-  padding: 0 5rem;
+  
 } */
 .third-paragraph-header h1 {
   letter-spacing: 2px;
@@ -107,63 +109,67 @@
   color: rgb(41, 41, 41);
 }
 .third-paragraph-header {
-  padding: 1rem 5rem;
+  /* border: 1px solid orangered; */
+
+  margin: 2rem 0 2rem 0;
 }
 .thirdParagraph1 {
-  padding: 0 5rem;
+  /* border: 1px solid orangered; */
+  margin: 1rem 0 1rem 0;
 }
 .thirdParagraph1 p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 .thirdParagraph2 p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
-.thirdParagraph2 {
-  padding: 1rem 5rem;
-}
+/* .thirdParagraph2 {
+  
+} */
 
-.third-paragraph-footer1 {
-  padding: 0.5rem 5rem;
-}
+/* .third-paragraph-footer1 {
+  
+} */
 .third-paragraph-footer1 span {
   color: rgb(85, 85, 85);
   font-weight: 700;
 }
 .third-paragraph-footer1 p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 .third-paragraph-footer2 p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 .third-paragraph-footer3 p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
-.third-paragraph-footer2 {
-  padding: 0.5rem 5rem;
-}
-.third-paragraph-footer3 {
-  padding: 0.5rem 5rem;
-}
-.third-paragraph-ul-list {
-  padding: 0 6rem;
-}
+/* .third-paragraph-footer2 {
+  
+} */
+/* .third-paragraph-footer3 {
+  
+} */
+/* .third-paragraph-ul-list {
+  
+} */
 .third-paragraph-ul-list ul li {
-  padding: 0.5rem 0;
-  font-size: 15px;
+  /* padding: 0.5rem 0; */
+  margin: 1rem 0 0 0;
+  font-size: 16px;
   font-weight: 400;
   color: rgb(75, 75, 75);
 }
 /* .fourth-paragraph {
     border: 1px solid orangered;
-    padding: 0 5rem;
+    
 } */
 .fourth-paragraph-header {
-  padding: 1rem 5rem;
+  margin: 2rem 0 2rem 0;
 }
 .fourth-paragraph-header h1 {
   letter-spacing: 2px;
@@ -172,8 +178,7 @@
   color: rgb(41, 41, 41);
 }
 .fourthParagraph1 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 .fourthParagraph1 .span1 {
@@ -189,13 +194,11 @@
   text-decoration: underline;
 }
 .fourthParagraph2 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 .fourthParagraph3 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -208,20 +211,18 @@
   text-decoration: underline;
 }
 .fourthParagraph4 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 .fourthParagraph5 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
 }
 /* .fifth-paragraph {
     border: 1px solid orangered;
 } */
 .fifth-paragraph-header {
-  padding: 1rem 5rem;
+  margin: 2rem 0 2rem 0;
 }
 .fifth-paragraph-header h1 {
   letter-spacing: 2px;
@@ -230,14 +231,12 @@
   color: rgb(41, 41, 41);
 }
 .fifthParagraph1 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
 .fifthParagraph2 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -245,7 +244,7 @@
     border: 1px solid orangered;
 } */
 .sixth-paragraph-header {
-  padding: 1rem 5rem;
+  margin: 2rem 0 2rem 0;
 }
 .sixth-paragraph-header h1 {
   letter-spacing: 2px;
@@ -254,8 +253,7 @@
   color: rgb(41, 41, 41);
 }
 .sixthParagraph1 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -268,8 +266,7 @@
   text-decoration: underline;
 }
 .sixthParagraph2 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -278,8 +275,7 @@
   font-weight: 700;
 }
 .sixthParagraph3 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -287,7 +283,7 @@
     border: 1px solid orangered;
 } */
 .seventh-paragraph-header {
-  padding: 1rem 5rem;
+  margin: 2rem 0 2rem 0;
 }
 .seventh-paragraph-header h1 {
   letter-spacing: 2px;
@@ -296,8 +292,7 @@
   color: rgb(41, 41, 41);
 }
 .seventhParagraph1 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -306,8 +301,7 @@
   font-weight: 700;
 }
 .seventhParagraph2 {
-  padding: 0.5rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -319,9 +313,9 @@
   cursor: pointer;
   text-decoration: underline;
 }
-.seventh-paragraph-ul-list {
-  padding: 0 6rem;
-}
+/* .seventh-paragraph-ul-list {
+  
+} */
 .seventh-paragraph-ul-list ul li {
   padding: 0.5rem 0;
   font-size: 16px;
@@ -333,26 +327,25 @@
 } */
 .eighth-paragraph-header {
   text-decoration: underline;
-  padding: 0 5rem;
+  margin: 2rem 0 2rem 0;
 }
 .eighth-paragraph-header h1 {
   letter-spacing: 2px;
   font-weight: 600;
-  font-size: 34px;
+  font-size: 35px;
   color: rgb(41, 41, 41);
 }
 .eighthParagraph1 {
-  padding: 1rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
-.eighth-paragraph-ol-list {
-  padding: 0 6rem;
-}
+/* .eighth-paragraph-ol-list {
+  
+} */
 .eighth-paragraph-ol-list ol li {
   padding: 0.5rem 0;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -373,18 +366,16 @@
 } */
 .nineth-paragraph-header {
   text-decoration: underline;
-  /* border-bottom: 2px solid black; */
-  padding: 0 5rem;
+  margin: 2rem 0 2rem 0;
 }
 .nineth-paragraph-header h1 {
   letter-spacing: 2px;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 35px;
   color: rgb(49, 49, 49);
 }
 .ninethParagraph1 {
-  padding: 1rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -396,12 +387,12 @@
 } */
 .tenth-paragraph-header {
   text-decoration: underline;
-  padding: 0 5rem;
+  margin: 2rem 0 2rem 0;
 }
 .tenth-paragraph-header h1 {
   letter-spacing: 2px;
   font-weight: 600;
-  font-size: 34px;
+  font-size: 35px;
   color: rgb(41, 41, 41);
 }
 .left-side-text-right-side-image {
@@ -421,44 +412,37 @@
   height: 21rem;
 }
 .tenthParagraph1 {
-  padding: 0.8rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
 .tenthParagraph2 {
-  padding: 0.8rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
 .tenthParagraph3 {
-  padding: 0.8rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
 .tenthParagraph4 {
-  padding: 0.8rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
 .tenthParagraph5 {
-  padding: 0.8rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
 .tenthParagraph6 {
-  padding: 0.8rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
 .tenthParagraph7 {
-  padding: 0.8rem 5rem;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
 }
@@ -492,8 +476,8 @@
 }
 .eleventh-paragraph-img {
   /* border: 1px solid green; */
+  margin: 3rem 0 3rem 0;
   display: flex;
-  padding: 2rem 5rem;
   justify-content: space-between;
 }
 
@@ -518,7 +502,6 @@
   font-size: 35px;
   font-weight: 600;
   letter-spacing: 2px;
-  /* padding: 5px; */
 }
 .order-now-button-div {
   /* border: 1px solid blue; */
@@ -544,7 +527,6 @@
   background-color: rgba(216, 21, 21, 0.89);
 }
 /* .arrowForwardIcon {
-  font-size: x-small;
 } */
 .right-list {
   /* border: 1px solid green; */

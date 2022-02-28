@@ -9,6 +9,8 @@ import ContactUs from '../src/pages/contactUs/ContactUs';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PageOne from './pages/cartPages/PageOne';
 import SelectMedi from './pages/cartPages/SelectMedi';
+import {ToastContainer} from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path='/selectMedi/:id' element={<SelectMedi />} />
       </Routes>
       </BrowserRouter>
+      <ToastContainer />
     </div>
   );
 }

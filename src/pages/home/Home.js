@@ -92,7 +92,7 @@ const Home = () => {
           <p>
             Thank you for visiting OnlinePharmas.com – the US’s One Stop Shop
             for Top Quality <span>ED Medication,</span>
-            <span>Anxiety Medication</span> and <span>Painkillers.</span>
+            <span> Anxiety Medication</span> and <span>Painkillers.</span>
           </p>
         </div>
         <div className="paragraph-2">
@@ -100,7 +100,7 @@ const Home = () => {
             If you are visiting for the first time and you want to buy cheap
             sleeping tablets online in the USA you have come to the right place!
             We accept payments on all major platforms
-            <span>PayPal, (Western Union/Bitcoin ) and Bank Transfer</span> – we
+            <span> PayPal, (Western Union/Bitcoin ) and Bank Transfer</span> – we
             offer the best deals on bulk orders.
           </p>
         </div>

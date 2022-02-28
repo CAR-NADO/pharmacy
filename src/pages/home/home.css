@@ -1,119 +1,118 @@
-.belowShopImage{
-    /* border: 1px solid black; */
-    height: 15rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.belowShopImage {
+  /* border: 1px solid black; */
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .home-page-card {
-    /* border: 1px solid blue; */
-    border: 1px solid rgb(235, 234, 234);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 7rem;
-    width: 21rem;
-    margin: 3rem  1rem;
-    
+  /* border: 1px solid blue; */
+  border: 1px solid rgb(235, 234, 234);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 7rem;
+  width: 21rem;
+  margin: 3rem 1rem;
 }
 .LocalShippingIcon {
-    color: rgb(87, 87, 87);
-    cursor: pointer;
+  color: rgb(87, 87, 87);
+  cursor: pointer;
 }
 .LocalShippingIcon:hover {
-    color: rgb(2, 212, 2) ;
-    font-size: 50px;
+  color: rgb(2, 212, 2);
+  font-size: 50px;
 }
 .removeIcon {
-    color: rgb(2, 212, 2) ;
+  color: rgb(2, 212, 2);
 }
 .fastShipping:hover {
-    color: rgb(2, 212, 2) ;
-    font-size: 20px;
-    cursor: pointer;
+  color: rgb(2, 212, 2);
+  font-size: 20px;
+  cursor: pointer;
 }
-.cardRight h4{
-    font-size: 18px;
-    font-weight: 600;
+.cardRight h4 {
+  font-size: 18px;
+  font-weight: 600;
 }
-.cardRight h5{
-    font-size: 16px;
-    font-weight: 500;
-    color: gray;
+.cardRight h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
 }
 
 /* ---------second part------- */
 
-.pharma-logo-2{
-    /* border: 1px solid black; */
-    height: 24rem;
+.pharma-logo-2 {
+  /* border: 1px solid black; */
+  height: 24rem;
 }
-.pharmaLogo2{
-    width: 100%;
+.pharmaLogo2 {
+  width: 100%;
 }
 .usBestOnline {
-    /* border: 1px solid black; */
-    padding: 1.6rem;
+  /* border: 1px solid black; */
+  padding: 1.6rem;
 }
 .usBestOnline h1 {
-    font-weight: 600;
-    font-size: 33px;
-    color: rgb(46, 46, 46);
+  font-weight: 600;
+  font-size: 33px;
+  color: rgb(46, 46, 46);
 }
 .usBestOnlineContainer {
-    /* border: 1px solid black; */
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .paragraph-1 {
-    /* border: 1px solid red; */
-    justify-content: center;
-    text-align: center;
-    display: flex;
+  /* border: 1px solid red; */
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 .paragraph-1 p {
-    font-size: 15px;
-    color: rgb(114, 113, 113);
+  font-size: 15px;
+  color: rgb(114, 113, 113);
 }
 .paragraph-1 span {
-    color: rgb(2, 212, 2) ;
-    font-weight: 700;
+  color: rgb(2, 212, 2);
+  font-weight: 700;
 }
 .paragraph-1 span:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
-.paragraph-2{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 1.5rem;
+.paragraph-2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 .paragraph-2 p {
-    font-size: 15px;
-    color: rgb(114, 113, 113);
+  font-size: 15px;
+  color: rgb(114, 113, 113);
 }
 .paragraph-2 span {
-    color: rgb(19, 34, 246);
-    font-weight: 700;
+  color: rgb(19, 34, 246);
+  font-weight: 700;
 }
 .paragraph-3 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1.5rem;
 }
 .paragraph-3 p {
-    font-size: 15px;
-    color: rgb(114, 113, 113);
+  font-size: 15px;
+  color: rgb(114, 113, 113);
 }
 .pharma-logo-4 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .pharma-logo-5 {
-    display: flex;
-    justify-content: center;
-    margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
 }

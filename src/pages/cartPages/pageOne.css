@@ -179,6 +179,11 @@
   /* border: none; */
   background-color: white;
 }
+/* .shopping-btn-link {
+  text-decoration: none;
+  height: 3.5rem;
+  width: 35rem;
+} */
 .shopping-btn:hover {
   border: 3px solid black;
   background-color: black;

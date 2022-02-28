@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./selectMedi.css";
 import Header from "../../components/header/Header";
 // import SubHeader from "../../components/howItsWorksComponents/SubHeader";
 import SubHeader from "../../components/header/SubHeader";
 import Footer from "../../components/footer/Footer";
-import CartImg1 from "../../assets/cart-img/cart-img1.jpg";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import StarIcon from "@mui/icons-material/Star";
@@ -20,15 +19,56 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { TiSocialGithubCircular } from "react-icons/ti";
 import { productsData } from "../../data/productsData";
 import { useParams } from "react-router-dom";
+import CloseIcon from "@mui/icons-material/Close";
+import {useDispatch, useSelector} from 'react-redux';
+import  {addItems} from '../../redux/actions/action';
 
 const SelectMedi = () => {
+  // const {cartItems} = useSelector((data)=> data.cartReducer)
   const { id } = useParams();
+  const dispatch = useDispatch();
   const product = productsData.filter((element) => element.id == id);
-  console.log("product", product[0].id);
+  console.log("product[0].id", product[0].id);
+  console.log("product", product);
+  const [selectPackage, setSelectPackage] = useState("disabled");
+
+  const handleChange = (e) => {
+    setSelectPackage(e.target.value);
+  };
+  // console.log("selectPackage", selectPackage);
+    const addToCart = () => {
+      
+      let productObj = {
+        // id:product[0].id,
+        id: JSON.parse(selectPackage).id,
+        sku: product[0].sku,
+        name: product[0].name,
+        category: product[0].category,
+        availability: product[0].availability,
+        discription: product[0].disc,
+        productImage: product[0].image,
+        reviews: product[0].reviews,
+        price: JSON.parse(selectPackage).price,
+      }
+      // console.log("productObj",productObj)
+      dispatch(addItems(productObj))
+      
+    }
   return (
     <div>
       <Header />
       <SubHeader />
+      {/* <div className="success-message-parent-dic">
+        {cartItems.map((data)=>{
+          const {name} = data.data;
+          return(
+        <div className="sucess-message-container">
+          <p><span>"{name}" </span> has been added to your cart.</p>
+          <button>View Cart</button>
+        </div>
+         )
+        })}
+      </div> */}
       <div className="select-medi-parent-div">
         <div className="select-medi-container">
           <div className="select-medi-container-left">
@@ -43,12 +83,10 @@ const SelectMedi = () => {
               <h2>{product[0].name}</h2>
               <div className="select-medi-div2">
                 <div className="select-medi-div2-arrow1">
-                  {" "}
-                  <ArrowLeftIcon />{" "}
+                  <ArrowLeftIcon />
                 </div>
                 <div className="select-medi-div2-arrow2">
-                  {" "}
-                  <ArrowRightIcon />{" "}
+                  <ArrowRightIcon />
                 </div>
               </div>
             </div>
@@ -71,12 +109,31 @@ const SelectMedi = () => {
               <h2>{product[0].price}</h2>
               <p>{product[0].disc}</p>
               <h3>select Package</h3>
-              <select className="select-medi-div6">
-                <option value="Choose an options">Choose an options</option>
-                <option value="180 pills express">180 pills express</option>
-                <option value="360 pills express">360 pills express</option>
+              <select
+                className="select-medi-div6"
+                value={selectPackage}
+                onChange={(e) => handleChange(e)}
+              >
+                <option value="disabled">Choose an options</option>
+                {product[0].selectPackageArr?.map((data) => {
+                  const { id, price, title } = data;
+                  // console.log("data", data);
+                  return (
+                    <option value={`{"price":${price}, "id":${id}}`} key={id}>
+                      {title}
+                    </option>
+                  );
+                })}
               </select>
+              {selectPackage !== "disabled" && (
+                <span onClick={() => setSelectPackage("disabled")}
+                className="closeIcon"
+                >  
+                  <CloseIcon /> clear
+                </span>
+              )}
             </div>
+            {selectPackage !== "disabled" && <h5 className="closeIcon">${JSON.parse(selectPackage).price}</h5>}
             <div className="select-medi-div7">
               <h3>Quantity</h3>
               <div className="select-medi-div8">
@@ -88,18 +145,23 @@ const SelectMedi = () => {
               </div>
             </div>
             <div className="select-medi-div10">
-              <button className="select-medi-div10-btn1">
-                {" "}
+              <button
+                disabled={selectPackage === "disabled"}
+                className={
+                  selectPackage === "disabled"
+                    ? "disabled"
+                    : "select-medi-div10-btn1"
+                }
+                onClick={()=> addToCart()}
+              >
                 <ShoppingCartIcon />
-                ADD TO CART{" "}
+                ADD TO CART
               </button>
               <button className="select-medi-div10-btn2">
-                {" "}
-                <FavoriteIcon />{" "}
+                <FavoriteIcon />
               </button>
               <button className="select-medi-div10-btn3">
-                {" "}
-                <RepeatIcon />{" "}
+                <RepeatIcon />
               </button>
             </div>
 

@@ -13,10 +13,10 @@ const SubFooter2 = () => {
             </div>
             <div className="subFooter2-footer-card">
                 {
-                     [1,2,3].map(()=> {
+                     [1,2,3].map((id)=> {
                          return (
                         
-                <div className="footer-card-left">
+                <div className="footer-card-left"key={id}>
                 <div className="footer-card-upper-img">
                     <img src={SubFooterImg1} alt="image" className='subFooterImg1'/>
                 </div>

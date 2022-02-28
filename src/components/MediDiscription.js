@@ -60,12 +60,10 @@ const MediDiscription = () => {
         <div className="firstParagraph">
           <p>
             To help people suffering from the problem of
-            <span className="span1">insomnia</span> , anxieties, and other
-            sleeping disorders,
-            <span className="span2">
-              buy anti anxiety tablets USA and sleeping tablets
-            </span>
-            from OnlinePharmas. We deliver all types of Prescription Free
+            <span className="span1"> insomnia</span> , anxieties, and other
+            sleeping disorders, <span className="span2">
+            buy anti anxiety tablets USA and sleeping tablets
+            </span> from OnlinePharmas. We deliver all types of Prescription Free
             Sleeping Tablets and anti-anxiety pills such as
           </p>
         </div>
@@ -88,10 +86,10 @@ const MediDiscription = () => {
             When you visit our website, you can browse many sleeping & anxiety
             tablets and order the one which best suits your medical conditions
             as they all are prescribed
-            <span>anxiety & pain Relief medicine.</span> The best thing to buy
+            <span> anxiety & pain Relief medicine.</span> The best thing to buy
             medicine from onlinepharmas is that you don’t have to worry about
             uploading the prescription. You can buy Cheap Medication Online in
-            <span>USA</span> and choose the quantity and wait for your order to
+            <span> USA</span> and choose the quantity and wait for your order to
             be delivered to your doorstep.
           </p>
         </div>
@@ -207,12 +205,10 @@ const MediDiscription = () => {
             well-being. We specialize in all types of tablets that revolve
             around keeping mental health optimal, treating sleeplessness, and
             relieving you from pain.
-            <span className="span1">
-              You can Buy Anxiety & Pain Tablets in the USA
-            </span>
+            <span className="span1"> You can Buy Anxiety & Pain Tablets in the USA </span>
             from onlinepharmas that include <span className="span2">Xanax</span>
             , valium, oxycodone, Jpdol, hydrocodone,
-            <span className="span2">clonazepam</span>, Lypin, tapentadol,
+            <span className="span2"> clonazepam</span>, Lypin, tapentadol,
             modalert, and <span className="span2">Adderall</span>.
           </p>
         </div>
@@ -275,7 +271,7 @@ const MediDiscription = () => {
         <div className="sixthParagraph1">
           <p>
             Things might not have been perfect for many of you with
-            <span>sleeping disorders</span> and it is needless to say that
+            <span> sleeping disorders</span> and it is needless to say that
             patients suffering from insomnia might have resorted to many
             sleeping pills. However, results never lasted for long, and quest to
             find another reliable medicine made you more restless, causing the
@@ -286,7 +282,7 @@ const MediDiscription = () => {
           <p>
             If you want to do away with this process of buying other sleeping
             tablets, then
-            <span>buy sleeping tablets from trusted online pharmacy.</span>
+            <span> buy sleeping tablets from trusted online pharmacy.</span>
           </p>
         </div>
         <div className="sixthParagraph3">
@@ -314,8 +310,8 @@ const MediDiscription = () => {
         <div className="seventhParagraph2">
           <p>
             Not only just sleeping tablets, you can
-            <span>Buy Pain Relief Tablets USA</span> and
-            <span>anti anxiety tablets online</span> also from our branded
+            <span> Buy Pain Relief Tablets USA</span> and
+            <span> anti anxiety tablets online</span> also from our branded
             pharmacy. We ensure timely delivery at affordable prices keeping
             some imperative factors in mind that set us apart from others.
           </p>
@@ -371,7 +367,7 @@ const MediDiscription = () => {
               on time, or not in a good condition at the time of delivery, we
               ensure to provide you with new package deal that is dispatched to
               you straight away. Keeping this aspect in mind, ensure to
-              <span className="span1">buy diazepam 10 USA</span> and other
+              <span className="span1"> buy diazepam 10 USA</span> and other
               medications from Onlinepharmas.
             </li>
           </ol>

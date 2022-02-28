@@ -1,3 +1,41 @@
+/* .success-message-parent-dic {
+  border: 1px solid green;
+} */
+.sucess-message-container {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* width: 100%; */
+  background-color: rgb(130, 160, 160);
+  margin: 1rem 6rem;
+  padding: 0 3rem;
+  border-radius: 5px;
+}
+.sucess-message-container p {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-top: 1rem;
+}
+.sucess-message-container p span {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(162, 230, 3);
+  /* margin-top: 1rem; */
+}
+.sucess-message-container button {
+  width: 6rem;
+  height: 2.2rem;
+  font-weight: 600;
+  color: gainsboro;
+  background-color: rgb(79, 116, 116);
+  /* border: 4px solid gainsboro; */
+}
+
+/* ************************************************************ */
+
 /* .select-medi-parent-div {
   border: 1px solid red;
 } */
@@ -108,6 +146,11 @@
   align-items: center;
   padding: 0 1rem;
 }
+.closeIcon {
+  color: red;
+  font-weight: 700;
+  cursor: pointer;
+}
 .select-medi-div8 input {
   border: none;
   outline-width: 0;
@@ -128,6 +171,16 @@
   color: white;
   background-color: black;
 }
+.disabled {
+  background-color: rgb(168, 167, 167);
+  width: 15.5rem;
+  height: 3.5rem;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
 .select-medi-div10-btn1:hover {
   background-color: rgba(83, 219, 5, 0.904);
 }
@@ -138,7 +191,7 @@
   border: none;
 }
 .select-medi-div10-btn2:hover {
-  margin: 0 2rem;
+  /* margin-top: 1rem; */
   color: white;
   background-color: rgba(83, 219, 5, 0.904);
 }

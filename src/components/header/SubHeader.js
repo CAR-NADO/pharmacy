@@ -8,12 +8,21 @@ import { Link, NavLink } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import { ImCross } from "react-icons/im";
-import CartImg1 from "../../assets/cart-img/cart-img1.jpg";
+import { useSelector, useDispatch } from "react-redux";
+import { removeItems } from "../../redux/actions/action";
 
 const SubHeader = () => {
+  const dispatch = useDispatch();
+  const { cartItems } = useSelector((state) => state.cartReducer);
+  // console.log("cartItems", cartItems);
+  
   const [state, setState] = React.useState({
     right: false,
   });
+  const handleRemoveItem = (id) => {
+    // console.log("handle remove item",id)
+    dispatch(removeItems(id));
+  };
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -37,25 +46,32 @@ const SubHeader = () => {
         <div className="drawer-container">
           <div className="drawer-container-div1">
             <h3>1 ITEM IN THE SHOPPING BAG</h3>
-            <ImCross className="drawer-container-div1-icon" onClick={toggleDrawer(anchor, false)}/>
+            <ImCross
+              className="drawer-container-div1-icon"
+              onClick={toggleDrawer(anchor, false)}
+            />
           </div>
-          {[1, 2, 3, 4, 5].map(() => {
+          {cartItems.map((cartItem) => {
+            const { productImage, name, price, id } = cartItem.data;
             return (
-              <div className="drawer-container-div2">
+              <div className="drawer-container-div2" key={id}>
                 <img
-                  src={CartImg1}
+                  src={productImage}
                   alt="image"
                   className="drawer-container-img"
                 />
                 <div className="drawer-container-div3">
                   <div className="drawer-container-div4">
-                    <h3>Buy Adderall Online</h3>
+                    <h3>{name}</h3>
                     <ImCross
                       fontSize="x-small"
                       className="drawer-container-div4-icon"
+                      onClick={() => handleRemoveItem(id)}
                     />
                   </div>
-                  <h3>1 x $510.00</h3>
+                  <h3>
+                    {cartItem.cartQuantity} x ${price}
+                  </h3>
                 </div>
               </div>
             );
@@ -66,10 +82,10 @@ const SubHeader = () => {
             <h2 className="">$510.00</h2>
           </div>
           <div className="drawer-container-div6">
-            <Link to='/PageOne' >
-            <button className="drawer-container-div6-btn1">
-              VIEW YOUR CART
-            </button>
+            <Link to="/PageOne">
+              <button className="drawer-container-div6-btn1">
+                VIEW YOUR CART
+              </button>
             </Link>
             <button className="drawer-container-div6-btn2">
               PROCEED TO CHECKOUT
@@ -87,11 +103,10 @@ const SubHeader = () => {
           <img src={pharmaLogo} alt="logo" id="image" />
         </div>
         <div className="sub-header-right-part">
-          {
-          ["right"].map((anchor) => (
+          {["right"].map((anchor) => (
             <React.Fragment key={anchor}>
               {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
-              <ImSearch 
+              <ImSearch
                 className="search-icon"
                 // onClick={toggleDrawer(anchor, true)}
               />
@@ -101,7 +116,7 @@ const SubHeader = () => {
                 color="primary"
                 className="cart-icon"
               >
-              <BsCartFill />
+                <BsCartFill />
               </Badge>
               <Drawer
                 anchor={anchor}
@@ -115,6 +130,7 @@ const SubHeader = () => {
       <div className="lower-part">
         <NavLink
           className={(navActive) =>
+            // {console.log("navActive", navActive)}
             navActive.isActive ? "isActive" : "navLink"
           }
           to="/"
