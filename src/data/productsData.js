@@ -24,13 +24,13 @@ export const productsData = [
       },
       {
         id:"2",
-        title:"180 pills express ",
-        price:"480",
+        title:"360 pills express ",
+        price:"910",
       },
       {
         id:"3",
-        title:"360 pills express ",
-        price:"910"
+        title:"180 pills express ",
+        price:"480"
       },
     ]
   },

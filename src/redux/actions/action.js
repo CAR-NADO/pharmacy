@@ -1,4 +1,5 @@
 export const addItems = (productObj)=> {
+  // console.log("productObj",productObj)
   return {
     type:"ADD_PRODUCT",
     payload:{
@@ -13,6 +14,15 @@ export const removeItems = (id)=> {
     type:"REMOVE_PRODUCT",
     payload:{
       id:id
+    }
+  }
+}
+
+export const decreaseProduct = (product)=> {
+  return {
+    type:"DECREASE_PRODUCT",
+    payload:{
+      product:product
     }
   }
 }

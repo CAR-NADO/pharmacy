@@ -8,13 +8,26 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import {removeItems,addItems, decreaseProduct} from '../../redux/actions/action';
 const PageOne = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleClick = ()=> {
     navigate('/shop')
   }
+  const handleIncreaseCart = (cartItem) => {
+    dispatch(addItems(cartItem))
+  }
+  const handleDecreaseCart = (cartItem) => {
+    dispatch(decreaseProduct(cartItem));
+    // console.log("cartItem",cartItem);
+  };
+  const handleRemoveItem = (id) => {
+    // console.log("handle remove item",id)
+    dispatch(removeItems(id));
+  };
   const {cartItems} = useSelector((state)=> state.cartReducer);
   return (
     <div className='cart-pageOne-parent-div'>
@@ -31,21 +44,28 @@ const PageOne = () => {
           </div>
         </div>
         {cartItems.map((data)=> {
-          const {id, productImage, name, price} = data.data;
+          // console.log("data",data);
+          const {id, productImage, name, price } = data.data;
             return (
         <div className='cart-pageOne-div3' key={id}>
           <img src={productImage} alt='image' className='cart-img1'/>
           <p>{name} - 90 pills express</p>
           <h2>${price}.00</h2>
           <div className='cart-pageOne-div3-input'>
-            <input type='text' className='cartPageOneDiv3Input' placeholder='1' />
+            <input type='text' className='cartPageOneDiv3Input' placeholder={data.cartQuantity} />
             <div className='cart-pageOne-upDown-icon'>
-            <ArrowDropUpIcon />
-            <ArrowDropDownIcon />
+            <ArrowDropUpIcon 
+            onClick={() => handleIncreaseCart(data.data)}
+            />
+            <ArrowDropDownIcon 
+            onClick={() => handleDecreaseCart(data.data)}
+            />
             </div>
           </div>
           <h2>${price}.00</h2>
-          <CancelIcon className='cart-pageOne-cancel-icon' />
+          <CancelIcon 
+          onClick={()=>handleRemoveItem(id)}
+          className='cart-pageOne-cancel-icon' />
         </div>
         )
       })}

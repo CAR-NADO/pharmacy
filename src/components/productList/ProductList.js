@@ -6,10 +6,9 @@ import { MdShoppingCart } from "react-icons/md";
 import StarIcon from "@mui/icons-material/Star";
 import { GoGitCompare } from "react-icons/go";
 import { Link } from "react-router-dom";
-import {productsData} from '../../data/productsData';
+import { productsData } from "../../data/productsData";
 
 const ProductList = () => {
-  
   return (
     <div>
       <div className="product-heading">
@@ -17,9 +16,8 @@ const ProductList = () => {
           <h1>Treatment Options at Online Pharmas</h1>
         </div>
         <div className="parentContainer">
-          {
-          productsData.map((product) => {
-            const {id, image,category,name,price} = product;
+          {productsData.map((product) => {
+            const { id, image, category, name, price } = product;
             return (
               <div className="medicineList" key={id}>
                 <div className="product-card content">
@@ -37,7 +35,10 @@ const ProductList = () => {
                     <div className="lowerPartIcon-left">
                       <FavoriteBorderIcon className="heartIcon" />
                     </div>
-                    <Link to={`/SelectMedi/${id}`} className="product-lower-part-link">
+                    <Link
+                      to={`/SelectMedi/${id}`}
+                      className="product-lower-part-link"
+                    >
                       <div className="lowerPartIcon-right">
                         <MdShoppingCart className="cartIcon" fontSize="small" />
                         <p className="selectOption">SELECT OPTIONS</p>

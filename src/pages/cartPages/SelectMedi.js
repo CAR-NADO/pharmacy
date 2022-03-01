@@ -28,8 +28,8 @@ const SelectMedi = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const product = productsData.filter((element) => element.id == id);
-  console.log("product[0].id", product[0].id);
-  console.log("product", product);
+  // console.log("product[0].id", product[0].id);
+  // console.log("product", product);
   const [selectPackage, setSelectPackage] = useState("disabled");
 
   const handleChange = (e) => {
@@ -49,6 +49,7 @@ const SelectMedi = () => {
         productImage: product[0].image,
         reviews: product[0].reviews,
         price: JSON.parse(selectPackage).price,
+        // title: product[0].selectPackageArr.title,
       }
       // console.log("productObj",productObj)
       dispatch(addItems(productObj))
