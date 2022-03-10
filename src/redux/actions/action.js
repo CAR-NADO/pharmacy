@@ -22,7 +22,14 @@ export const decreaseProduct = (product)=> {
   return {
     type:"DECREASE_PRODUCT",
     payload:{
-      product:product
+      data:product
     }
+  }
+}
+
+export const getTotal = ()=> {
+  return {
+    type:"GET_TOTALS",
+    
   }
 }

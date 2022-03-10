@@ -1,124 +1,127 @@
 .footer-parent {
-    border: 1px solid black;
-    height: 24rem;
-    padding: 2rem;
-    padding-left: 5rem;
-    background-color: black;
+  border: 1px solid black;
+  height: 24rem;
+  padding: 2rem;
+  padding-left: 5rem;
+  background-color: black;
 }
 .footer-header-div {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 .footer-header1 {
-    width: 30%;
-    padding: 5px 0;
+  width: 30%;
+  padding: 5px 0;
 }
 .footer-span-parent-div {
-    display: flex;
+  display: flex;
 }
 .footer-span1 {
-    border: 1px solid rgb(136, 136, 136);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 3px;
+  border: 1px solid rgb(136, 136, 136);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 3px;
 }
 .footer-span1:hover {
-    cursor: pointer;
-    background-color: rgba(4, 105, 200, 0.685);
+  cursor: pointer;
+  background-color: rgba(4, 105, 200, 0.685);
+  border: 1px solid rgba(1, 80, 155, 0.719);
 }
 .footer-span2 {
-    border: 0.25px solid rgb(136, 136, 136);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 3px;
+  border: 1px solid rgb(136, 136, 136);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 3px;
 }
 .footer-span2:hover {
-    cursor: pointer;
-    background-color: rgba(2, 115, 128, 0.692);
+  cursor: pointer;
+  background-color: rgba(2, 115, 128, 0.692);
+  border: 1px solid rgba(2, 115, 128, 0.692);
 }
 .footer-span3 {
-    border: 1px solid rgb(136, 136, 136);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 3px;
+  border: 1px solid rgb(136, 136, 136);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 3px;
 }
 .footer-span3:hover {
-    cursor: pointer;
-    background-color: rgba(209, 9, 9, 0.876);
+  cursor: pointer;
+  background-color: rgba(209, 9, 9, 0.876);
+  border: 1px solid rgba(209, 9, 9, 0.876);
 }
 .footer-span-icon {
-    /* border: 1px solid black; */
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-top: 5px;
-    color: rgb(248, 248, 248);
+  /* border: 1px solid black; */
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 5px;
+  color: rgb(248, 248, 248);
 }
 .footer-header1 p {
-    margin-bottom: 15px;
-    color: rgb(243, 246, 243);
+  margin-bottom: 15px;
+  color: rgb(243, 246, 243);
 }
-.footer-header2 h2{
-    color: rgb(242, 243, 246);
-    font-weight: 400;
+.footer-header2 h2 {
+  color: rgb(242, 243, 246);
+  font-weight: 400;
 }
 .footer-header2 {
-    width: 21%;
+  width: 21%;
 }
-.footer-header2 p{
-    margin-top: 0.5rem;
-    color: rgb(242, 243, 246);
+.footer-header2 p {
+  margin-top: 0.5rem;
+  color: rgb(242, 243, 246);
 }
-.footer-header2 p:hover{
-    cursor: pointer;
-    color: rgb(5, 226, 5);
+.footer-header2 p:hover {
+  cursor: pointer;
+  color: rgb(5, 226, 5);
 }
 .footer-header3 {
-    width: 21%;
+  width: 21%;
 }
-.footer-header3 p{
-    margin-top: 0.8rem;
-    color: rgb(253, 253, 253);
-} 
-.footer-header3 p:hover{
-    cursor: pointer;
-    color: rgb(5, 226, 5);
+.footer-header3 p {
+  margin-top: 0.8rem;
+  color: rgb(253, 253, 253);
+}
+.footer-header3 p:hover {
+  cursor: pointer;
+  color: rgb(5, 226, 5);
 }
 .footer-header4 {
-    /* border: 1px solid orangered; */
-    width: 25%;
-    margin: 5px;
-    justify-content: space-between;
+  /* border: 1px solid orangered; */
+  width: 25%;
+  margin: 5px;
+  justify-content: space-between;
 }
 .footer-header4 h2 {
-    color: white;
-    font-weight: 400;
+  color: white;
+  font-weight: 400;
 }
 .footer-header4 img {
-    width: 6rem;
-    height: 6rem;
-    margin-right: 2.5rem;
+  width: 6rem;
+  height: 6rem;
+  margin-right: 2.5rem;
 }
 .footer-lower-div {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem;
-    padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  padding-right: 2rem;
 }
 .footer-lower1-span1 {
-    cursor: pointer;
-    color: rgb(5, 212, 5);
-    font-weight: 500;
+  cursor: pointer;
+  color: rgb(5, 212, 5);
+  font-weight: 500;
 }
 .footer-lower1-span2 {
-    color: rgb(244, 247, 250);
+  color: rgb(244, 247, 250);
 }

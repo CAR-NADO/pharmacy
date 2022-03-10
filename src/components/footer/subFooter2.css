@@ -1,64 +1,73 @@
-.subFooter2-parent{
-    /* border: 1px solid blue; */
-    padding: 1rem 5rem;
+.subFooter2-parent {
+  /* border: 1px solid blue; */
+  padding: 1rem 5rem;
 }
 .subFooter2 {
-    border-bottom: 2px solid rgb(226, 225, 225);
-    
+  border-bottom: 2px solid rgb(226, 225, 225);
 }
 .subFooter2-header {
-    /* border: 1px solid rgb(30, 255, 0); */
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
+  /* border: 1px solid rgb(30, 255, 0); */
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
 }
 .subFooter2-header p {
-    font-weight: 600;
-    font-size: 30px;
-    color: rgb(26, 25, 25);
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(26, 25, 25);
 }
 .subFooter2-footer-card {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-card-left {
-    /* border: 1px solid orangered; */
-    width: 32%;
-    height: 36rem;
-    padding: 2rem 0;
+  /* border: 1px solid orangered; */
+  width: 32%;
+  height: 36rem;
+  padding: 2rem 0;
 }
 .subFooterImg1 {
-    width: 100%;
+  width: 100%;
 }
 .footer-card-paragraph {
-    /* border: 1px solid rgb(5, 188, 212); */
-    width: 100%;
-    padding: 0 2rem;
+  /* border: 1px solid rgb(5, 188, 212); */
+  width: 100%;
+  padding: 0 2rem;
 }
-.footer-card-para1 p{
-    padding: 0.5rem 0;
-    font-size: 15px;
-    font-weight: 600;
+.footer-card-para1 p {
+  /* padding: 0.5rem 0; */
+  font-size: 18px;
+  font-weight: 600;
 }
 .footer-card-para2 p {
-    font-size: 15px;
-    color: (95, 94, 94);
+  font-size: 17px;
+  color: (95, 94, 94);
 }
-.footer-card-para3 p{
-    padding: 1rem 0;
-    font-size: 15px;
-    color: rgb(95, 94, 94);
-    border-bottom: 1px solid rgb(221, 221, 221);
+.footer-card-para3 p {
+  /* padding: 1rem 0; */
+  margin-bottom: 1rem;
+  font-size: 17px;
+  color: rgb(95, 94, 94);
+  border-bottom: 1px solid rgb(221, 221, 221);
 }
 .footer-card-para4 {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-card-para4 span {
+  font-size: 15px;
+  font-weight: 700;
+}
+.footer-card-para4 span:hover {
+  color: rgb(2, 199, 2);
+  cursor: pointer;
+  font-size: 18px;
 }
 .footer-card-para4 p {
-    font-size: 14px;
-    font-weight: 600;
-    padding: 1.5rem 0;
+  font-size: 14px;
+  font-weight: 600;
+  /* padding: 1.5rem 0; */
 }
 .footer-card-para4 .DoubleArrowIcon {
-    font-size: 10px;
+  font-size: 15px;
 }

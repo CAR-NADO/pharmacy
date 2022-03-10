@@ -1,10 +1,11 @@
 import { toast } from "react-toastify";
 const initialState = {
   cartItems: [],
-  cartTotalQuatity: 0,
+  cartTotalQuantity: 0,
   cartTotalAmount: 0,
 };
 const cartReducer = (state = initialState, action) => {
+  // console.log("action", action);
   switch (action.type) {
     case "ADD_PRODUCT":
       const itemIndex = state.cartItems.findIndex(
@@ -12,18 +13,12 @@ const cartReducer = (state = initialState, action) => {
       );
       if (itemIndex >= 0) {
         state.cartItems[itemIndex].cartQuantity += 1;
-        //   toast(`You've changed ${state.cartItems[itemIndex].name} QUANTITY to ${state.cartItems[itemIndex].cartQuantity} `,{
-        //     position:"top-center",
-        //     type:"success",
-        //     theme:"dark",
-        //     autoClose:3000,
 
-        // })
         toast(`You have increase quantity by 1`, {
           position: "top-center",
           type: "success",
           theme: "dark",
-          autoClose: 3000,
+          autoClose: 1000,
         });
       } else {
         const tempProduct = { ...action.payload, cartQuantity: 1 };
@@ -31,7 +26,7 @@ const cartReducer = (state = initialState, action) => {
           position: "top-center",
           type: "success",
           theme: "dark",
-          autoClose: 3000,
+          autoClose: 1000,
         });
         return {
           ...state,
@@ -52,35 +47,72 @@ const cartReducer = (state = initialState, action) => {
       };
 
     // *********************************************************************************
-    case "DECREASE_PRODUCT":
-      const itemIndex1 = state.cartItems.findIndex(
-        (cartItem) => cartItem.data.id === action.payload.product.id
-      );
-      if (state.cartItems[itemIndex1].cartQuantity > 1) {
-        state.cartItems[itemIndex1].cartQuantity -= 1;
 
+    case "DECREASE_PRODUCT":
+      const productIndex = state.cartItems.findIndex(
+        (item) => item.data.id == action.payload.data.id
+      );
+      if (state.cartItems[productIndex].cartQuantity > 1) {
+        // console.log("first");
+        state.cartItems[productIndex].cartQuantity -= 1;
         toast(
-          `You've changed ${state.cartItems[itemIndex1].name} QUANTITY to ${state.cartItems[itemIndex1].cartQuantity} `,
+          `You've changed ${state.cartItems[productIndex].data.name} QUANTITY to ${state.cartItems[productIndex].cartQuantity} `,
           {
             position: "top-center",
             type: "success",
             theme: "dark",
-            autoClose: 3000,
+            autoClose: 1000,
           }
         );
-      } else if (state.cartItems[itemIndex1].cartQuantity === 1) {
+      } else if (state.cartItems[productIndex].cartQuantity === 1) {
+        // console.log("second IF ELSE");
         const nextCartItems = state.cartItems.filter(
-          (cartItem) => cartItem.id !== action.payload.id
+          (cartItem) => cartItem.data.id !== action.payload.data.id
         );
+
         state.cartItems = nextCartItems;
 
-        toast(`Successfully removed ${action.payload.name} from your cart`, {
-          position: "top-center",
-          type: "error",
-          theme: "dark",
-          autoClose: 3000,
-        });
+        toast(
+          `Successfully removed ${action.payload.data.name} from your cart`,
+          {
+            position: "top-center",
+            type: "error",
+            theme: "dark",
+            autoClose: 1000,
+          }
+        );
       }
+
+      return {
+        ...state,
+      };
+
+    //************************************************************************************
+
+    case "GET_TOTALS":
+      let { total, quantity } = state.cartItems.reduce(
+        (cartTotal, cartItem) => {
+          // console.log("cartItem", cartItem.data)
+          const { price } = cartItem.data;
+          const { cartQuantity } = cartItem;
+          const itemTotal = price * cartQuantity;
+
+          cartTotal.total += itemTotal;
+          cartTotal.quantity += cartQuantity;
+          return cartTotal;
+        },
+        {
+          total: 0,
+          quantity: 0,
+        }
+      );
+
+      state.cartTotalQuantity = quantity;
+      state.cartTotalAmount = total;
+
+      return {
+        ...state,
+      };
 
     default:
       return state;

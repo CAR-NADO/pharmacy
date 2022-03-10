@@ -21,7 +21,7 @@ import { productsData } from "../../data/productsData";
 import { useParams } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import {useDispatch, useSelector} from 'react-redux';
-import  {addItems} from '../../redux/actions/action';
+import  {addItems, getTotal} from '../../redux/actions/action';
 
 const SelectMedi = () => {
   // const {cartItems} = useSelector((data)=> data.cartReducer)
@@ -53,23 +53,13 @@ const SelectMedi = () => {
       }
       // console.log("productObj",productObj)
       dispatch(addItems(productObj))
+      dispatch(getTotal())
       
     }
   return (
     <div>
       <Header />
       <SubHeader />
-      {/* <div className="success-message-parent-dic">
-        {cartItems.map((data)=>{
-          const {name} = data.data;
-          return(
-        <div className="sucess-message-container">
-          <p><span>"{name}" </span> has been added to your cart.</p>
-          <button>View Cart</button>
-        </div>
-         )
-        })}
-      </div> */}
       <div className="select-medi-parent-div">
         <div className="select-medi-container">
           <div className="select-medi-container-left">
@@ -135,7 +125,7 @@ const SelectMedi = () => {
               )}
             </div>
             {selectPackage !== "disabled" && <h5 className="closeIcon">${JSON.parse(selectPackage).price}</h5>}
-            <div className="select-medi-div7">
+            {/* <div className="select-medi-div7">
               <h3>Quantity</h3>
               <div className="select-medi-div8">
                 <input type="text" placeholder="1" />
@@ -144,7 +134,7 @@ const SelectMedi = () => {
                   <ArrowDropDownIcon />
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="select-medi-div10">
               <button
                 disabled={selectPackage === "disabled"}

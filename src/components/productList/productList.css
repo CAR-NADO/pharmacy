@@ -48,8 +48,9 @@
   cursor: pointer;
 }
 .medicine1 {
-  width: 15.2rem;
-  height: 16.9rem;
+  /* border: 1px solid blue; */
+  width: 18.5rem;
+  height: 20.6rem;
 }
 .lowerPart {
   /* border: 1px solid purple; */

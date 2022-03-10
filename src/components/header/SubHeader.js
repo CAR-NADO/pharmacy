@@ -9,19 +9,22 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import { ImCross } from "react-icons/im";
 import { useSelector, useDispatch } from "react-redux";
-import { removeItems } from "../../redux/actions/action";
+import { removeItems, getTotal } from "../../redux/actions/action";
 
 const SubHeader = () => {
   const dispatch = useDispatch();
-  const { cartItems } = useSelector((state) => state.cartReducer);
+  const { cartItems, cartTotalQuantity, cartTotalAmount } = useSelector(
+    (state) => state.cartReducer
+  );
   // console.log("cartItems", cartItems);
-  
+
   const [state, setState] = React.useState({
     right: false,
   });
   const handleRemoveItem = (id) => {
     // console.log("handle remove item",id)
     dispatch(removeItems(id));
+    dispatch(getTotal());
   };
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -45,7 +48,13 @@ const SubHeader = () => {
       <div className="drawer-parent-div">
         <div className="drawer-container">
           <div className="drawer-container-div1">
-            <h3>1 ITEM IN THE SHOPPING BAG</h3>
+            {cartTotalQuantity === 0 && <h6>Your shopping cart is empty</h6>}
+            {cartTotalQuantity === 1 && (
+              <h6> {cartTotalQuantity} ITEM IN THE SHOPPING BAG</h6>
+            )}
+            {cartTotalQuantity > 1 && (
+              <h6> {cartTotalQuantity} ITEMS IN THE SHOPPING BAG</h6>
+            )}
             <ImCross
               className="drawer-container-div1-icon"
               onClick={toggleDrawer(anchor, false)}
@@ -76,27 +85,32 @@ const SubHeader = () => {
               </div>
             );
           })}
-          <div className="straight-line"></div>
-          <div className="drawer-container-div5">
-            <h2>SUBTOTAL :</h2>
-            <h2 className="">$510.00</h2>
-          </div>
-          <div className="drawer-container-div6">
-            <Link to="/PageOne">
-              <button className="drawer-container-div6-btn1">
-                VIEW YOUR CART
-              </button>
-            </Link>
-            <button className="drawer-container-div6-btn2">
-              PROCEED TO CHECKOUT
-            </button>
-          </div>
+          {cartTotalQuantity !== 0 && (
+            <>
+              <div className="straight-line"></div>
+              <div className="drawer-container-div5">
+                <h2>SUBTOTAL :</h2>
+                <h2 className="">${cartTotalAmount}.00</h2>
+              </div>
+              <div className="drawer-container-div6">
+                <Link to="/PageOne">
+                  <button className="drawer-container-div6-btn1">
+                    VIEW YOUR CART
+                  </button>
+                </Link>
+                <button className="drawer-container-div6-btn2">
+                  PROCEED TO CHECKOUT
+                </button>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </Box>
   );
   // const navigate = useNavigate();
   return (
+    <>
     <header className="subHeader">
       <div className="upper-part">
         <div className="left-image">
@@ -112,7 +126,7 @@ const SubHeader = () => {
               />
               <Badge
                 onClick={toggleDrawer(anchor, true)}
-                badgeContent={1}
+                badgeContent={cartTotalQuantity}
                 color="primary"
                 className="cart-icon"
               >
@@ -127,7 +141,22 @@ const SubHeader = () => {
           ))}
         </div>
       </div>
-      <div className="lower-part">
+      <div>
+        {["right"].map((anchor) => (
+          <React.Fragment key={anchor}>
+            {/* <Button onClick={toggleDrawer(anchor, true)}></Button> */}
+            <Drawer
+              anchor={anchor}
+              open={state[anchor]}
+              onClose={toggleDrawer(anchor, false)}
+            >
+              {list(anchor)}
+            </Drawer>
+          </React.Fragment>
+        ))}
+      </div>
+    </header>
+    <div className="lower-part">
         <NavLink
           className={(navActive) =>
             // {console.log("navActive", navActive)}
@@ -187,21 +216,7 @@ const SubHeader = () => {
           <span>CONTACT US</span>
         </NavLink>
       </div>
-      <div>
-        {["right"].map((anchor) => (
-          <React.Fragment key={anchor}>
-            {/* <Button onClick={toggleDrawer(anchor, true)}></Button> */}
-            <Drawer
-              anchor={anchor}
-              open={state[anchor]}
-              onClose={toggleDrawer(anchor, false)}
-            >
-              {list(anchor)}
-            </Drawer>
-          </React.Fragment>
-        ))}
-      </div>
-    </header>
+    </>
   );
 };
 

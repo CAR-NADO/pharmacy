@@ -10,7 +10,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import {removeItems,addItems, decreaseProduct} from '../../redux/actions/action';
+import {removeItems,addItems, decreaseProduct, getTotal} from '../../redux/actions/action';
+import emptyCartImage from '../../assets/images/emptyCartImage.png';
 const PageOne = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -19,21 +20,32 @@ const PageOne = () => {
   }
   const handleIncreaseCart = (cartItem) => {
     dispatch(addItems(cartItem))
+    dispatch(getTotal())
+    // console.log("cartItem",cartItem);
   }
   const handleDecreaseCart = (cartItem) => {
-    dispatch(decreaseProduct(cartItem));
     // console.log("cartItem",cartItem);
+    dispatch(decreaseProduct(cartItem));
+    dispatch(getTotal())
   };
   const handleRemoveItem = (id) => {
     // console.log("handle remove item",id)
     dispatch(removeItems(id));
+    dispatch(getTotal())
   };
-  const {cartItems} = useSelector((state)=> state.cartReducer);
+  const {cartItems, cartTotalAmount} = useSelector((state)=> state.cartReducer);
   return (
     <div className='cart-pageOne-parent-div'>
       <Header />
       <SubHeader />
-      <div className='cart-pageOne-container'>
+      {cartItems.length === 0 ? (<div className="emptyCartContainer">
+          <div className="emptyCart">
+            <img src={emptyCartImage} className="emptyCartImage" alt="cart" />
+            <h6>Your cart is empty!</h6>
+            <p>Add items to it now</p>
+            <button onClick={() => navigate("/shop")}>Shop now</button>
+          </div>
+        </div>):(<div className='cart-pageOne-container'>
       <div className='cart-pageOne-container-left'>
         <div className='cart-pageOne-div1'>
           <h2>ITEM</h2>
@@ -44,7 +56,7 @@ const PageOne = () => {
           </div>
         </div>
         {cartItems.map((data)=> {
-          // console.log("data",data);
+          console.log("data",data);
           const {id, productImage, name, price } = data.data;
             return (
         <div className='cart-pageOne-div3' key={id}>
@@ -81,7 +93,7 @@ const PageOne = () => {
         <h2>CART TOTALS</h2>
         <div className='cart-pageOne-div6'>
           <h2>Subtotal</h2>
-          <h2>$510.00</h2>
+          <h2>${cartTotalAmount}.00</h2>
         </div>
         <div className='cart-pageOne-div7'>
           <h2>Shipping</h2>
@@ -96,7 +108,7 @@ const PageOne = () => {
         </div>
         <div className='cart-pageOne-div10'>
           <h2>Total</h2>
-          <h2>$520.00</h2>
+          <h2>${cartTotalAmount + 10}.00</h2>
         </div>
         <div className='cart-pageOne-btn-div'>
         <button className='checkout-btn'>PROCEED TO CHECKOUT</button>
@@ -106,12 +118,7 @@ const PageOne = () => {
 
         </div>
       </div>
-      </div>
-      {/* <div className='cart-pageOne-div11'>
-        <h2>You may be interested in...</h2>
-        <KeyboardDoubleArrowDownIcon />
-      </div> */}
-      {/* <ProductList /> */}
+      </div>)}
       <Footer />
     </div>
   )

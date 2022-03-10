@@ -199,3 +199,46 @@
   font-weight: 700;
   color: rgb(4, 80, 167);
 }
+
+/* ---------------cart is empty style start----------   */
+
+.emptyCartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emptyCartImage {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+}
+
+.emptyCart h6 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 1.6rem;
+}
+.emptyCart p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.6rem 0;
+}
+
+.emptyCart button {
+  border: none;
+  outline: none;
+  padding: 0.7rem 4rem;
+  background: #fb641b;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+ /* cart is empty style end   */
