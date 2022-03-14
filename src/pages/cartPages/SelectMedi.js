@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import StarIcon from "@mui/icons-material/Star";
-import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import RepeatIcon from "@mui/icons-material/Repeat";
@@ -20,10 +18,62 @@ import { TiSocialGithubCircular } from "react-icons/ti";
 import { productsData } from "../../data/productsData";
 import { useParams } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-import {useDispatch, useSelector} from 'react-redux';
-import  {addItems, getTotal} from '../../redux/actions/action';
+import { useDispatch, useSelector } from "react-redux";
+import { addItems, getTotal } from "../../redux/actions/action";
+import { addWishList } from "../../redux/actions/actionWishList";
+import { toast } from "react-toastify";
 
 const SelectMedi = () => {
+  const dispatchWishList = useDispatch();
+  const result = useSelector((state) => {
+    return state.wishListReducer;
+  });
+  // console.log("result", result);
+  const addToWishList = (product) => {
+    let existProductInWishlist = result.wishListItems.filter((item) => {
+      return item.id === product[0].id;
+    });
+    // console.log("product", product);
+    if (existProductInWishlist.length === 0) {
+      dispatchWishList(addWishList(product));
+      toast("Product added in wishlist...", {
+        type: "success",
+        theme: "dark",
+        autoClose: 1000,
+      });
+    } else {
+      toast("Product already exist in wishlist!", {
+        type: "error",
+        theme: "dark",
+        autoClose: 2000,
+      });
+    }
+  };
+  // const dispatchWishList = useDispatch();
+  // const result = useSelector((state) => {
+  //   return state.wishListReducer;
+  // });
+
+  // const addToWishList = (product) => {
+  //   let existProductInWishlist = result.wishListItems.filter((item) => {
+  //     return item.id === product.id;
+  //   });
+  //   console.log("existProductInWishlist", existProductInWishlist);
+  //   if (existProductInWishlist.length === 0) {
+  //     dispatchWishList(addWishList(product));
+  //     toast("Product added in wishlist...", {
+  //       type: "success",
+  //       theme: "dark",
+  //       autoClose: 1000,
+  //     });
+  //   } else {
+  //     toast("Product already exist in wishlist!", {
+  //       type: "error",
+  //       theme: "dark",
+  //       autoClose: 2000,
+  //     });
+  //   }
+  // };
   // const {cartItems} = useSelector((data)=> data.cartReducer)
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -36,26 +86,24 @@ const SelectMedi = () => {
     setSelectPackage(e.target.value);
   };
   // console.log("selectPackage", selectPackage);
-    const addToCart = () => {
-      
-      let productObj = {
-        // id:product[0].id,
-        id: JSON.parse(selectPackage).id,
-        sku: product[0].sku,
-        name: product[0].name,
-        category: product[0].category,
-        availability: product[0].availability,
-        discription: product[0].disc,
-        productImage: product[0].image,
-        reviews: product[0].reviews,
-        price: JSON.parse(selectPackage).price,
-        // title: product[0].selectPackageArr.title,
-      }
-      // console.log("productObj",productObj)
-      dispatch(addItems(productObj))
-      dispatch(getTotal())
-      
-    }
+  const addToCart = () => {
+    let productObj = {
+      // id:product[0].id,
+      id: JSON.parse(selectPackage).id,
+      sku: product[0].sku,
+      name: product[0].name,
+      category: product[0].category,
+      availability: product[0].availability,
+      discription: product[0].disc,
+      productImage: product[0].image,
+      reviews: product[0].reviews,
+      price: JSON.parse(selectPackage).price,
+      // title: product[0].selectPackageArr.title,
+    };
+    // console.log("productObj",productObj)
+    dispatch(addItems(productObj));
+    dispatch(getTotal());
+  };
   return (
     <div>
       <Header />
@@ -117,14 +165,17 @@ const SelectMedi = () => {
                 })}
               </select>
               {selectPackage !== "disabled" && (
-                <span onClick={() => setSelectPackage("disabled")}
-                className="closeIcon"
-                >  
+                <span
+                  onClick={() => setSelectPackage("disabled")}
+                  className="closeIcon"
+                >
                   <CloseIcon /> clear
                 </span>
               )}
             </div>
-            {selectPackage !== "disabled" && <h5 className="closeIcon">${JSON.parse(selectPackage).price}</h5>}
+            {selectPackage !== "disabled" && (
+              <h5 className="closeIcon">${JSON.parse(selectPackage).price}</h5>
+            )}
             {/* <div className="select-medi-div7">
               <h3>Quantity</h3>
               <div className="select-medi-div8">
@@ -143,12 +194,15 @@ const SelectMedi = () => {
                     ? "disabled"
                     : "select-medi-div10-btn1"
                 }
-                onClick={()=> addToCart()}
+                onClick={() => addToCart()}
               >
                 <ShoppingCartIcon />
                 ADD TO CART
               </button>
-              <button className="select-medi-div10-btn2">
+              <button
+                onClick={() => addToWishList(product)}
+                className="select-medi-div10-btn2"
+              >
                 <FavoriteIcon />
               </button>
               <button className="select-medi-div10-btn3">

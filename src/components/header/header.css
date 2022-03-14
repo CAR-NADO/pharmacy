@@ -70,3 +70,27 @@
   display: flex;
   margin: 0 1rem;
 }
+
+/* ******************************Responsive********************************/
+
+@media (max-width: 640px) and (min-width: 360px) {
+  .header {
+    width: 100%;
+  }
+  .left-header {
+    display: none;
+  }
+  .middle-header {
+    width: 63%;
+  }
+  .right-header-parent {
+    width: 37%;
+  }
+  .p-font-style {
+    font-size: 12px;
+  }
+  .font-style {
+    font-size: 12px;
+    /* font-weight: 500; */
+  }
+}

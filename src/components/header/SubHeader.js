@@ -61,6 +61,7 @@ const SubHeader = () => {
             />
           </div>
           {cartItems.map((cartItem) => {
+            console.log("cartItems", cartItems);
             const { productImage, name, price, id } = cartItem.data;
             return (
               <div className="drawer-container-div2" key={id}>
@@ -111,52 +112,52 @@ const SubHeader = () => {
   // const navigate = useNavigate();
   return (
     <>
-    <header className="subHeader">
-      <div className="upper-part">
-        <div className="left-image">
-          <img src={pharmaLogo} alt="logo" id="image" />
+      <header className="subHeader">
+        <div className="upper-part">
+          <div className="left-image">
+            <img src={pharmaLogo} alt="logo" id="image" />
+          </div>
+          <div className="sub-header-right-part">
+            {["right"].map((anchor) => (
+              <React.Fragment key={anchor}>
+                {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
+                <ImSearch
+                  className="search-icon"
+                  // onClick={toggleDrawer(anchor, true)}
+                />
+                <Badge
+                  onClick={toggleDrawer(anchor, true)}
+                  badgeContent={cartTotalQuantity}
+                  color="primary"
+                  className="cart-icon"
+                >
+                  <BsCartFill />
+                </Badge>
+                <Drawer
+                  anchor={anchor}
+                  open={state[anchor]}
+                  onClose={toggleDrawer(anchor, false)}
+                ></Drawer>
+              </React.Fragment>
+            ))}
+          </div>
         </div>
-        <div className="sub-header-right-part">
+        <div>
           {["right"].map((anchor) => (
             <React.Fragment key={anchor}>
-              {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
-              <ImSearch
-                className="search-icon"
-                // onClick={toggleDrawer(anchor, true)}
-              />
-              <Badge
-                onClick={toggleDrawer(anchor, true)}
-                badgeContent={cartTotalQuantity}
-                color="primary"
-                className="cart-icon"
-              >
-                <BsCartFill />
-              </Badge>
+              {/* <Button onClick={toggleDrawer(anchor, true)}></Button> */}
               <Drawer
                 anchor={anchor}
                 open={state[anchor]}
                 onClose={toggleDrawer(anchor, false)}
-              ></Drawer>
+              >
+                {list(anchor)}
+              </Drawer>
             </React.Fragment>
           ))}
         </div>
-      </div>
-      <div>
-        {["right"].map((anchor) => (
-          <React.Fragment key={anchor}>
-            {/* <Button onClick={toggleDrawer(anchor, true)}></Button> */}
-            <Drawer
-              anchor={anchor}
-              open={state[anchor]}
-              onClose={toggleDrawer(anchor, false)}
-            >
-              {list(anchor)}
-            </Drawer>
-          </React.Fragment>
-        ))}
-      </div>
-    </header>
-    <div className="lower-part">
+      </header>
+      <div className="lower-part">
         <NavLink
           className={(navActive) =>
             // {console.log("navActive", navActive)}
@@ -182,7 +183,6 @@ const SubHeader = () => {
         >
           <span>SHOP</span>
         </NavLink>
-        {/* <span onClick={()=> navigate('/HowItsWork')}>HOW IT WORKS</span> */}
         <NavLink
           className={(navActive) =>
             navActive.isActive ? "isActive" : "navLink"

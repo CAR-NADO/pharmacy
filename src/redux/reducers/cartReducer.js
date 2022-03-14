@@ -13,7 +13,6 @@ const cartReducer = (state = initialState, action) => {
       );
       if (itemIndex >= 0) {
         state.cartItems[itemIndex].cartQuantity += 1;
-
         toast(`You have increase quantity by 1`, {
           position: "top-center",
           type: "success",
@@ -33,7 +32,6 @@ const cartReducer = (state = initialState, action) => {
           cartItems: [...state.cartItems, tempProduct],
         };
       }
-
     // *********************************************************************************
 
     case "REMOVE_PRODUCT":
@@ -92,7 +90,6 @@ const cartReducer = (state = initialState, action) => {
     case "GET_TOTALS":
       let { total, quantity } = state.cartItems.reduce(
         (cartTotal, cartItem) => {
-          // console.log("cartItem", cartItem.data)
           const { price } = cartItem.data;
           const { cartQuantity } = cartItem;
           const itemTotal = price * cartQuantity;
@@ -109,11 +106,10 @@ const cartReducer = (state = initialState, action) => {
 
       state.cartTotalQuantity = quantity;
       state.cartTotalAmount = total;
-
+      // console.log("state", state);
       return {
         ...state,
       };
-
     default:
       return state;
   }

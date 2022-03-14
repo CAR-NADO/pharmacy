@@ -7,8 +7,37 @@ import StarIcon from "@mui/icons-material/Star";
 import { GoGitCompare } from "react-icons/go";
 import { Link } from "react-router-dom";
 import { productsData } from "../../data/productsData";
+import { useDispatch } from "react-redux";
+import { addWishList } from "../../redux/actions/actionWishList";
+import { useSelector } from "react-redux";
+import { toast } from "react-toastify";
 
 const ProductList = () => {
+  const dispatch = useDispatch();
+  const result = useSelector((state) => {
+    return state.wishListReducer;
+  });
+
+  const addToWishList = (product) => {
+    let existProductInWishlist = result.wishListItems.filter((item) => {
+      return item.id === product.id;
+    });
+
+    if (existProductInWishlist.length === 0) {
+      dispatch(addWishList(product));
+      toast("Product added in wishlist...", {
+        type: "success",
+        theme: "dark",
+        autoClose: 2000,
+      });
+    } else {
+      toast("Product already exist in wishlist!", {
+        type: "error",
+        theme: "dark",
+        autoClose: 2000,
+      });
+    }
+  };
   return (
     <div>
       <div className="product-heading">
@@ -33,7 +62,10 @@ const ProductList = () => {
                       <GoGitCompare className="compareIcon" />
                     </div>
                     <div className="lowerPartIcon-left">
-                      <FavoriteBorderIcon className="heartIcon" />
+                      <FavoriteBorderIcon
+                        className="heartIcon"
+                        onClick={() => addToWishList(product)}
+                      />
                     </div>
                     <Link
                       to={`/SelectMedi/${id}`}
@@ -68,3 +100,8 @@ const ProductList = () => {
 };
 
 export default ProductList;
+
+// const { id } = useParams();
+// const product = productsData.filter((elem) => {
+//   return elem;
+// });

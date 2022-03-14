@@ -46,6 +46,39 @@ const Home = () => {
       disc: "CHECKOUT SYSTEM",
     },
   ];
+  // const cartTotal = {
+  //   total: 100,
+  //   quantity: 10,
+  // };
+  // cartTotal.product = "laptop";
+  // console.log("cartTotal", cartTotal);
+
+  // const arr = [
+  //   {
+  //     id: 1,
+  //     name: "apple",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "ball",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "cat",
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "dog",
+  //   },
+  // ];
+
+  // let a = 10;
+
+  // const filters = arr.filter((item) => {
+  //   return item;
+  // });
+
+  // console.log("filters", filters);
 
   return (
     <div>
@@ -100,8 +133,8 @@ const Home = () => {
             If you are visiting for the first time and you want to buy cheap
             sleeping tablets online in the USA you have come to the right place!
             We accept payments on all major platforms
-            <span> PayPal, (Western Union/Bitcoin ) and Bank Transfer</span> – we
-            offer the best deals on bulk orders.
+            <span> PayPal, (Western Union/Bitcoin ) and Bank Transfer</span> –
+            we offer the best deals on bulk orders.
           </p>
         </div>
         <div className="paragraph-3">

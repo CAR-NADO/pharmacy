@@ -1,9 +1,11 @@
-import cartReducer from './cartReducer';
+import cartReducer from "./cartReducer";
+import wishListReducer from "./wishListReducer";
 
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
-const rootReducer = combineReducers ({
-  cartReducer:cartReducer
-})
+const rootReducer = combineReducers({
+  cartReducer: cartReducer,
+  wishListReducer: wishListReducer,
+});
 
 export default rootReducer;

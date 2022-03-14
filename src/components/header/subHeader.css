@@ -34,7 +34,7 @@
   width: 5rem;
 }
 .lower-part {
-  /* border: 1px ridge; */
+  border: 1px solid blue;
   height: 4.6rem;
   display: flex;
   justify-content: center;
@@ -162,4 +162,21 @@
   border: 3px solid rgb(238, 17, 83);
   background-color: white;
   color: rgb(238, 17, 83);
+}
+
+/* ************************Responsive************************* */
+
+@media (max-width: 640px) and (min-width: 360px) {
+  .subHeader {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .left-image {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  #image {
+    margin: 0;
+  }
 }
