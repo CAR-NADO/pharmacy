@@ -12,6 +12,12 @@ import SelectMedi from "./pages/cartPages/SelectMedi";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import WishList from "../src/pages/wishList/WishList";
+import OnlineDoctor from "../src/pages/footerPages/onlineDoctor/OnlineDoctor";
+import TandC from "./pages/footerPages/T&C/TandC";
+import PrivacyPolicy from "./pages/footerPages/privacyPolicy/PrivacyPolicy";
+import Disclaimer from "./pages/footerPages/disclaimer/Disclaimer";
+import Refund from "./pages/footerPages/refund/Refund";
+import FakePharma from "./pages/footerPages/fakePharmacy/FakePharma";
 
 function App() {
   return (
@@ -28,6 +34,12 @@ function App() {
           <Route path="/pageOne" element={<PageOne />} />
           <Route path="/selectMedi/:id" element={<SelectMedi />} />
           <Route path="/wishList" element={<WishList />} />
+          <Route path="/onlineDoctor" element={<OnlineDoctor />} />
+          <Route path="/tandC" element={<TandC />} />
+          <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/refund" element={<Refund />} />
+          <Route path="/fakePharma" element={<FakePharma />} />
         </Routes>
       </BrowserRouter>
       <ToastContainer />

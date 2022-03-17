@@ -1,0 +1,23 @@
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* .privacy-policy-parent-div {
+  border: 1px solid blue;
+} */
+.privacy-policy-container {
+  /* border: 1px solid green; */
+  margin: 2rem 6rem;
+}
+.privacy-policy-container h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 1.5rem 0;
+  letter-spacing: 0.25px;
+}
+.privacy-policy-container p {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(92, 91, 91, 0.925);
+}

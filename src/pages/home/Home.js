@@ -18,8 +18,20 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import NearMeIcon from "@mui/icons-material/NearMe";
 import CardMembershipIcon from "@mui/icons-material/CardMembership";
 import RemoveIcon from "@mui/icons-material/Remove";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const catoNavigate = useNavigate();
+  const handleEdNavigate = () => {
+    catoNavigate("/SelectMedi/18");
+  };
+  const handleAmNavigate = () => {
+    catoNavigate("/SelectMedi/11");
+  };
+  const handlePkNavigate = () => {
+    catoNavigate("/SelectMedi/10");
+  };
+
   const cardData = [
     {
       id: 1,
@@ -124,8 +136,13 @@ const Home = () => {
         <div className="paragraph-1">
           <p>
             Thank you for visiting OnlinePharmas.com – the US’s One Stop Shop
-            for Top Quality <span>ED Medication,</span>
-            <span> Anxiety Medication</span> and <span>Painkillers.</span>
+            for Top Quality{" "}
+            <span onClick={() => handleEdNavigate()}>ED Medication,</span>
+            <span onClick={() => handleAmNavigate()}>
+              {" "}
+              Anxiety Medication
+            </span>{" "}
+            and <span onClick={() => handlePkNavigate()}>Painkillers.</span>
           </p>
         </div>
         <div className="paragraph-2">

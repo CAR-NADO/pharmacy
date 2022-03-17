@@ -11,8 +11,10 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaPinterestP } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigateFooter = useNavigate();
   return (
     <div className="footer-parent">
       <div className="footer-header-div">
@@ -33,17 +35,33 @@ const Footer = () => {
           <div className="footer-span-parent-div">
             <div className="footer-span1">
               <span>
-                <CgFacebook className="footer-span-icon" />
+                <CgFacebook
+                  className="footer-span-icon"
+                  onClick={(e) =>
+                    (window.location =
+                      "https://www.facebook.com/onlinepharmasusa/")
+                  }
+                />
               </span>
             </div>
             <div className="footer-span2">
               <span>
-                <AiFillInstagram className="footer-span-icon" />
+                <AiFillInstagram
+                  className="footer-span-icon"
+                  onClick={(e) =>
+                    (window.location = "https://www.instagram.com")
+                  }
+                />
               </span>
             </div>
             <div className="footer-span3">
               <span>
-                <FaPinterestP className="footer-span-icon" />
+                <FaPinterestP
+                  className="footer-span-icon"
+                  onClick={(e) =>
+                    (window.location = "https://www.pinterest.com/")
+                  }
+                />
               </span>
             </div>
           </div>
@@ -51,19 +69,21 @@ const Footer = () => {
         <div className="footer-header2">
           <h2>QUICK LINKS</h2>
           <p>Chemist Near Me</p>
-          <p>Fake Online Pharmacies</p>
+          <p onClick={() => navigateFooter("/fakePharma")}>
+            Fake Online Pharmacies
+          </p>
           <p>Ksalol 1 mg</p>
-          <p>Delivery Info</p>
+          <p onClick={() => navigateFooter("/deliveryInfo")}>Delivery Info</p>
           <p>Blogs</p>
-          <p>Refund Policy</p>
+          <p onClick={() => navigateFooter("/refund")}>Refund Policy</p>
         </div>
         <div className="footer-header3">
-          <p>Online Doctor</p>
+          <p onClick={() => navigateFooter("/onlineDoctor")}>Online Doctor</p>
           <p>What is Citra 100</p>
-          <p>Terms & Conditions</p>
-          <p>FAQ</p>
-          <p>Privacy Policy</p>
-          <p>DISCLAIMER</p>
+          <p onClick={() => navigateFooter("/tandC")}>Terms & Conditions</p>
+          <p onClick={() => navigateFooter("/faq")}>FAQ</p>
+          <p onClick={() => navigateFooter("/privacyPolicy")}>Privacy Policy</p>
+          <p onClick={() => navigateFooter("/disclaimer")}>DISCLAIMER</p>
         </div>
         <div className="footer-header4">
           <h2>SECURED BY</h2>

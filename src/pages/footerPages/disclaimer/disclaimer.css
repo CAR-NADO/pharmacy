@@ -1,0 +1,22 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+/* .disclaimer-parents-div {
+  border: 1px solid red;
+} */
+.disclaimer-container {
+  /* border: 1px solid blue; */
+  margin: 2rem 6rem;
+}
+.disclaimer-container p {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(92, 91, 91, 0.925);
+  word-spacing: 12px;
+}
+.disclaimer-container p span {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(36, 36, 36, 0.925);
+}

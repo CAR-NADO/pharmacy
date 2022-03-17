@@ -1,0 +1,38 @@
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* .refund-parents-div {
+  border: 1px solid blue;
+} */
+.refund-container {
+  /* border: 1px solid red; */
+  margin: 3rem 6rem;
+}
+.refund-container p {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(92, 91, 91, 0.925);
+  margin-bottom: 1.2rem;
+}
+.refund-container ul li {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(92, 91, 91, 0.925);
+  margin-bottom: 1.2rem;
+}
+.refund-container h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.25px;
+}
+.refund-container h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: rgba(2, 64, 180, 0.925);
+  /* letter-spacing: 0.25px; */
+}

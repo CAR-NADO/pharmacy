@@ -7,8 +7,13 @@ import PharmaLogo9 from "../assets/images/pharma-logo-9.png";
 import PharmaLogo10 from "../assets/images/pharma-logo-10.jpg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ErrorIcon from "@mui/icons-material/Error";
+import { useNavigate } from "react-router-dom";
 
 const MediDiscription = () => {
+  const navigateOrderNow = useNavigate();
+  const handleOrderNow = () => {
+    navigateOrderNow("/shop");
+  };
   return (
     <div className="container">
       <div className="after-product-list">
@@ -22,7 +27,10 @@ const MediDiscription = () => {
             </h1>
           </div>
           <div className="order-now-button-div">
-            <button className="order-now-button">
+            <button
+              className="order-now-button"
+              onClick={() => handleOrderNow()}
+            >
               Order now: Genuine Medication
             </button>
           </div>
@@ -59,11 +67,21 @@ const MediDiscription = () => {
         <div className="firstParagraph">
           <p>
             To help people suffering from the problem of
-            <span className="span1"> insomnia</span> , anxieties, and other
-            sleeping disorders,
+            <span
+              className="span1"
+              onClick={(e) =>
+                (window.location =
+                  "https://www.sleepfoundation.org/insomnia/types-of-insomnia")
+              }
+            >
+              {" "}
+              insomnia
+            </span>{" "}
+            , anxieties, and other sleeping disorders,
             <span className="span2">
+              {" "}
               buy anti anxiety tablets USA and sleeping tablets
-            </span>
+            </span>{" "}
             from OnlinePharmas. We deliver all types of Prescription Free
             Sleeping Tablets and anti-anxiety pills such as
           </p>
@@ -207,7 +225,8 @@ const MediDiscription = () => {
             around keeping mental health optimal, treating sleeplessness, and
             relieving you from pain.
             <span className="span1">
-              You can Buy Anxiety & Pain Tablets in the USA
+              {" "}
+              You can Buy Anxiety & Pain Tablets in the USA{" "}
             </span>
             from onlinepharmas that include <span className="span2">Xanax</span>
             , valium, oxycodone, Jpdol, hydrocodone,
@@ -227,8 +246,17 @@ const MediDiscription = () => {
           <p>
             We assure you of improved health with our Prescription Free Sleeping
             Tablets that are of the highest standard and are meticulously tested
-            during <span>clinical trials</span>. We guarantee to deliver you
-            undamaged and unmarked packaging within 4-5 business working days.
+            during{" "}
+            <span
+              onClick={(e) =>
+                (window.location =
+                  "https://www.mayo.edu/research/clinical-trials/diseases-conditions/sleep-apnea")
+              }
+            >
+              clinical trials
+            </span>
+            . We guarantee to deliver you undamaged and unmarked packaging
+            within 4-5 business working days.
           </p>
         </div>
         <div className="fourthParagraph4">
@@ -274,11 +302,20 @@ const MediDiscription = () => {
         <div className="sixthParagraph1">
           <p>
             Things might not have been perfect for many of you with
-            <span> sleeping disorders</span> and it is needless to say that
-            patients suffering from insomnia might have resorted to many
-            sleeping pills. However, results never lasted for long, and quest to
-            find another reliable medicine made you more restless, causing the
-            health to deteriorate miserably over time.
+            <span
+              onClick={(e) =>
+                (window.location =
+                  "https://www.sleepfoundation.org/sleep-disorders")
+              }
+            >
+              {" "}
+              sleeping disorders
+            </span>{" "}
+            and it is needless to say that patients suffering from insomnia
+            might have resorted to many sleeping pills. However, results never
+            lasted for long, and quest to find another reliable medicine made
+            you more restless, causing the health to deteriorate miserably over
+            time.
           </p>
         </div>
         <div className="sixthParagraph2">

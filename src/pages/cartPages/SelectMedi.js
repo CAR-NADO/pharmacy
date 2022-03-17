@@ -49,37 +49,11 @@ const SelectMedi = () => {
       });
     }
   };
-  // const dispatchWishList = useDispatch();
-  // const result = useSelector((state) => {
-  //   return state.wishListReducer;
-  // });
 
-  // const addToWishList = (product) => {
-  //   let existProductInWishlist = result.wishListItems.filter((item) => {
-  //     return item.id === product.id;
-  //   });
-  //   console.log("existProductInWishlist", existProductInWishlist);
-  //   if (existProductInWishlist.length === 0) {
-  //     dispatchWishList(addWishList(product));
-  //     toast("Product added in wishlist...", {
-  //       type: "success",
-  //       theme: "dark",
-  //       autoClose: 1000,
-  //     });
-  //   } else {
-  //     toast("Product already exist in wishlist!", {
-  //       type: "error",
-  //       theme: "dark",
-  //       autoClose: 2000,
-  //     });
-  //   }
-  // };
-  // const {cartItems} = useSelector((data)=> data.cartReducer)
   const { id } = useParams();
   const dispatch = useDispatch();
   const product = productsData.filter((element) => element.id == id);
-  // console.log("product[0].id", product[0].id);
-  // console.log("product", product);
+  console.log("product", product);
   const [selectPackage, setSelectPackage] = useState("disabled");
 
   const handleChange = (e) => {

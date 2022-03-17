@@ -5,14 +5,14 @@ const initialState = {
   cartTotalAmount: 0,
 };
 const cartReducer = (state = initialState, action) => {
-  console.log("action", action);
+  // console.log("action", action);
   switch (action.type) {
     case "ADD_PRODUCT":
       const itemIndex = state.cartItems.findIndex(
         (item) => item.data.id === action.payload.data.id
       );
       if (itemIndex >= 0) {
-        console.log("item Index if ==>", itemIndex);
+        // console.log("item Index if ==>", itemIndex);
 
         state.cartItems[itemIndex].cartQuantity += 1;
         toast(`You have increase quantity by 1`, {
@@ -22,7 +22,7 @@ const cartReducer = (state = initialState, action) => {
           autoClose: 1000,
         });
       } else {
-        console.log("item Index else ==>", itemIndex);
+        // console.log("item Index else ==>", itemIndex);
 
         const tempProduct = { ...action.payload, cartQuantity: 1 };
         toast(`${action.payload.data.name} added to cart`, {
@@ -84,7 +84,6 @@ const cartReducer = (state = initialState, action) => {
           }
         );
       }
-
       return {
         ...state,
       };
