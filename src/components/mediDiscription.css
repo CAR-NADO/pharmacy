@@ -1,5 +1,5 @@
 /* .container {
-    border: 1px solid green;
+  border: 1px solid green;
 } */
 .parent-div {
   /* border: 1px solid red; */
@@ -477,6 +477,7 @@
 .eleventh-paragraph-img {
   /* border: 1px solid green; */
   margin: 3rem 0 3rem 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -568,4 +569,92 @@
   font-size: 30px;
   margin-left: 2rem;
   margin-top: 5px;
+}
+
+/* ************************Responsive************************* */
+
+@media (max-width: 990px) and (min-width: 640px) {
+  .container {
+    width: auto;
+  }
+
+  .after-product-list {
+    width: 100%;
+  }
+  .left-part {
+    width: 50%;
+  }
+  .pharmaLogo6 {
+    width: 15rem;
+    height: 14rem;
+  }
+  .right-part {
+    width: 50%;
+    /* padding: 10px; */
+  }
+  .rightHeadingText {
+    font-size: 16px;
+  }
+  .order-now-button {
+    margin-left: 8rem;
+    border-radius: 15px;
+    width: 16rem;
+    height: 2rem;
+    font-size: 8px;
+  }
+  /* .mediBtn {
+    display: none;
+  } */
+  .right-list ul li {
+    font-size: 10px;
+  }
+  .info-heading {
+    height: 2rem;
+    width: 100%;
+    background-color: rgba(248, 234, 234, 0.966);
+  }
+  .info-heading .errorIcon {
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-top: 7px;
+    color: rgba(190, 60, 60, 0.897);
+  }
+  .info-heading p {
+    font-size: 10px;
+    color: rgb(29, 29, 29);
+  }
+  .container h1 {
+    font-size: 16px;
+  }
+  .container p {
+    font-size: 10px;
+  }
+  .container ol li {
+    font-size: 10px;
+  }
+  .container ul li {
+    font-size: 10px;
+  }
+  .secondParagraphImg {
+    width: auto;
+    height: 10rem;
+  }
+  .rightSideImg {
+    width: 12rem;
+    height: 12rem;
+  }
+  .eleventh-paragraph-left-img {
+    width: auto;
+  }
+  .eleventh-paragraph-right-img {
+    width: auto;
+  }
+  .eleventhParagraph-leftImg {
+    height: 12rem;
+    width: auto;
+  }
+  .eleventhParagraph-rightImg {
+    height: 12rem;
+    width: auto;
+  }
 }

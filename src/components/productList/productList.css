@@ -21,6 +21,7 @@
   align-items: center;
 }
 .product-card {
+  /* border: 1px solid blue; */
   border: 1px ridge;
   width: 19rem;
   height: 22rem;
@@ -176,4 +177,48 @@
 .cardLowerDisc p .starIcon {
   font-size: 16px;
   color: rgb(50, 206, 50);
+}
+
+/* ************************Responsive************************* */
+
+@media (max-width: 990px) and (min-width: 640px) {
+  .headingText h1 {
+    font-size: 14px;
+    /* font-weight: 600; */
+  }
+  .product-card {
+    /* border: 1px solid red; */
+    width: 8rem;
+    height: 11rem;
+  }
+  /* .product-card .lowerPart {
+    display: none;
+  } */
+  .medicine1 {
+    width: 7.5rem;
+    height: 9.6rem;
+  }
+  /* .lowerPart {
+    border: 1px solid purple;
+    display: ;
+    height: 14%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+  } */
+  .cardLowerDisc .starIcon {
+    display: none;
+  }
+  .selectOption {
+    font-size: 10px;
+  }
+  .medicineList {
+    /* border: 1px solid blue; */
+    margin: 0;
+  }
+  /* .content .content-overlay {
+    height: 86%;
+    width: 100%;
+  } */
 }

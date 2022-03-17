@@ -23,8 +23,7 @@ const MediDiscription = () => {
           </div>
           <div className="order-now-button-div">
             <button className="order-now-button">
-                Order now <ArrowForwardIosIcon className="arrowForwardIcon" fontSize="small"/>
-                Genuine Medication
+              Order now: Genuine Medication
             </button>
           </div>
           <div className="right-list">
@@ -41,10 +40,10 @@ const MediDiscription = () => {
       </div>
       <div className="info-heading-container">
         <div className="info-heading">
-            <ErrorIcon className="errorIcon"/> 
-            <p>The information on this website
-            is not intended to replace advice from a doctor or qualified medical
-            expert.
+          <ErrorIcon className="errorIcon" />
+          <p>
+            The information on this website is not intended to replace advice
+            from a doctor or qualified medical expert.
           </p>
         </div>
       </div>
@@ -61,9 +60,11 @@ const MediDiscription = () => {
           <p>
             To help people suffering from the problem of
             <span className="span1"> insomnia</span> , anxieties, and other
-            sleeping disorders, <span className="span2">
-            buy anti anxiety tablets USA and sleeping tablets
-            </span> from OnlinePharmas. We deliver all types of Prescription Free
+            sleeping disorders,
+            <span className="span2">
+              buy anti anxiety tablets USA and sleeping tablets
+            </span>
+            from OnlinePharmas. We deliver all types of Prescription Free
             Sleeping Tablets and anti-anxiety pills such as
           </p>
         </div>
@@ -205,7 +206,9 @@ const MediDiscription = () => {
             well-being. We specialize in all types of tablets that revolve
             around keeping mental health optimal, treating sleeplessness, and
             relieving you from pain.
-            <span className="span1"> You can Buy Anxiety & Pain Tablets in the USA </span>
+            <span className="span1">
+              You can Buy Anxiety & Pain Tablets in the USA
+            </span>
             from onlinepharmas that include <span className="span2">Xanax</span>
             , valium, oxycodone, Jpdol, hydrocodone,
             <span className="span2"> clonazepam</span>, Lypin, tapentadol,
@@ -462,10 +465,18 @@ const MediDiscription = () => {
       </div>
       <div className="eleventh-paragraph-img">
         <div className="eleventh-paragraph-left-img">
-          <img src={PharmaLogo9} alt="logo" />
+          <img
+            src={PharmaLogo9}
+            alt="logo"
+            className="eleventhParagraph-leftImg"
+          />
         </div>
         <div className="eleventh-paragraph-right-img">
-          <img src={PharmaLogo10} alt="logo" />
+          <img
+            src={PharmaLogo10}
+            alt="logo"
+            className="eleventhParagraph-rightImg"
+          />
         </div>
       </div>
     </div>

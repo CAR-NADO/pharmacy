@@ -1,5 +1,5 @@
 .belowShopImage {
-  /* border: 1px solid black; */
+  /* border: 2px solid red; */
   height: 15rem;
   display: flex;
   align-items: center;
@@ -115,4 +115,62 @@
   display: flex;
   justify-content: center;
   margin: 1.5rem;
+}
+
+/* ************************Responsive************************* */
+
+@media (max-width: 990px) and (min-width: 640px) {
+  .shop-imageContainer {
+    width: 100%;
+    padding: 0 2px;
+  }
+  .belowShopImage {
+    width: auto;
+  }
+  .home-page-card {
+    width: auto;
+  }
+  .cardRight h4 {
+    font-size: 16px;
+  }
+  .cardRight h5 {
+    font-size: 14px;
+  }
+  .pharma-logo-2 {
+    width: auto;
+    height: 22rem;
+  }
+  .usBestOnline h1 {
+    /* font-weight: 600; */
+    font-size: 22px;
+    /* color: rgb(46, 46, 46); */
+  }
+  .pharmaLogo3 {
+    width: 8rem;
+    height: 8rem;
+  }
+  .paragraph-1 p {
+    font-size: 10px;
+    /* color: rgb(114, 113, 113); */
+  }
+  .paragraph-2 p {
+    font-size: 10px;
+    /* color: rgb(114, 113, 113); */
+  }
+  .paragraph-3 p {
+    font-size: 10px;
+    /* color: rgb(114, 113, 113); */
+  }
+  .pharmaLogo4 {
+    width: auto;
+    height: 8rem;
+  }
+  .pharmaLogo5 {
+    width: auto;
+    height: 8rem;
+  }
+  .usBestOnline {
+    /* border: 1px solid black; */
+    padding: 0;
+  }
 }

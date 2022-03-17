@@ -34,7 +34,7 @@
   width: 5rem;
 }
 .lower-part {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 4.6rem;
   display: flex;
   justify-content: center;
@@ -166,17 +166,29 @@
 
 /* ************************Responsive************************* */
 
-@media (max-width: 640px) and (min-width: 360px) {
+@media (max-width: 990px) and (min-width: 640px) {
   .subHeader {
     width: 100%;
     padding: 0 5px;
   }
   .left-image {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    object-fit: contain;
     width: 80%;
   }
   #image {
     margin: 0;
+    width: auto;
+    height: auto;
+  }
+  .sub-header-right-part {
+    width: 5rem;
+  }
+  .lower-part {
+    width: 100%;
+  }
+  .lower-part span {
+    font-size: 12px;
   }
 }

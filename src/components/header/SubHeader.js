@@ -61,7 +61,7 @@ const SubHeader = () => {
             />
           </div>
           {cartItems.map((cartItem) => {
-            console.log("cartItems", cartItems);
+            // console.log("cartItems", cartItems);
             const { productImage, name, price, id } = cartItem.data;
             return (
               <div className="drawer-container-div2" key={id}>
@@ -121,10 +121,7 @@ const SubHeader = () => {
             {["right"].map((anchor) => (
               <React.Fragment key={anchor}>
                 {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
-                <ImSearch
-                  className="search-icon"
-                  // onClick={toggleDrawer(anchor, true)}
-                />
+                <ImSearch className="search-icon" />
                 <Badge
                   onClick={toggleDrawer(anchor, true)}
                   badgeContent={cartTotalQuantity}

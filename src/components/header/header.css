@@ -73,24 +73,30 @@
 
 /* ******************************Responsive********************************/
 
-@media (max-width: 640px) and (min-width: 360px) {
+@media (max-width: 990px) and (min-width: 640px) {
   .header {
-    width: 100%;
+    width: auto;
   }
   .left-header {
-    display: none;
+    width: 50%;
   }
   .middle-header {
-    width: 63%;
+    width: 50%;
   }
   .right-header-parent {
-    width: 37%;
+    display: none;
   }
   .p-font-style {
-    font-size: 12px;
+    font-size: 10px;
   }
   .font-style {
-    font-size: 12px;
+    font-size: 10px;
     /* font-weight: 500; */
+  }
+  .icons p {
+    display: none;
+  }
+  .wishlist {
+    display: none;
   }
 }
