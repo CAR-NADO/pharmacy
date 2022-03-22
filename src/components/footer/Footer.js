@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
         <div className="footer-header3">
           <p onClick={() => navigateFooter("/onlineDoctor")}>Online Doctor</p>
-          <p>What is Citra 100</p>
+          <p onClick={() => navigateFooter("/citra")}>What is Citra 100</p>
           <p onClick={() => navigateFooter("/tandC")}>Terms & Conditions</p>
           <p onClick={() => navigateFooter("/faq")}>FAQ</p>
           <p onClick={() => navigateFooter("/privacyPolicy")}>Privacy Policy</p>

@@ -1,0 +1,45 @@
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* .citra-parents-div {
+  border: 1px solid red;
+} */
+.citra-container {
+  /* border: 1px solid blue; */
+  margin: 2rem 6rem;
+}
+.citra-container h1 {
+  font-size: 38px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 2rem;
+  letter-spacing: 0.25px;
+  color: rgb(29, 157, 243);
+}
+.citra-container p {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: rgba(92, 91, 91, 0.925);
+  word-spacing: 1px;
+}
+.citra-container ul li {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: rgba(92, 91, 91, 0.925);
+}
+.citra-container span {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(22, 202, 5, 0.925);
+  cursor: pointer;
+}
+.citra-container span:hover {
+  text-decoration: underline;
+}
+.citraImg {
+  margin-bottom: 2rem;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./subHeader.css";
 import pharmaLogo from "../../assets/images/pharma-logo.png";
 import { ImSearch } from "react-icons/im";
@@ -10,8 +10,18 @@ import Drawer from "@mui/material/Drawer";
 import { ImCross } from "react-icons/im";
 import { useSelector, useDispatch } from "react-redux";
 import { removeItems, getTotal } from "../../redux/actions/action";
+import { productsData } from "../../data/productsData";
 
 const SubHeader = () => {
+  const [inputFilter, setInputFilter] = useState([]);
+  const handleSearchInput = (event) => {
+    const searchWord = event.target.value;
+    const newFilterData = productsData.filter((value) => {
+      return value.name.toLowerCase().includes(searchWord.toLowerCase());
+    });
+    setInputFilter(newFilterData);
+  };
+
   const dispatch = useDispatch();
   const { cartItems, cartTotalQuantity, cartTotalAmount } = useSelector(
     (state) => state.cartReducer
@@ -34,10 +44,8 @@ const SubHeader = () => {
     ) {
       return;
     }
-
     setState({ ...state, [anchor]: open });
   };
-
   const list = (anchor) => (
     <Box
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 367 }}
@@ -109,7 +117,6 @@ const SubHeader = () => {
       </div>
     </Box>
   );
-  // const navigate = useNavigate();
   return (
     <>
       <header className="subHeader">
@@ -120,8 +127,29 @@ const SubHeader = () => {
           <div className="sub-header-right-part">
             {["right"].map((anchor) => (
               <React.Fragment key={anchor}>
-                {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
-                <ImSearch className="search-icon" />
+                <div>
+                  <div className="subHeader-input-field">
+                    <input
+                      type="text"
+                      // value={inputFilter}
+                      placeholder="Search Product..."
+                      className="subHeaderInputField"
+                      onChange={(e) => {
+                        handleSearchInput(e);
+                      }}
+                    />
+                    <div>
+                      <ImSearch className="search-icon" />
+                    </div>
+                  </div>
+                  {inputFilter.length != 0 && (
+                    <div className="search-input-list">
+                      {inputFilter.map((val, id) => {
+                        return <p>{val.name}</p>;
+                      })}
+                    </div>
+                  )}
+                </div>
                 <Badge
                   onClick={toggleDrawer(anchor, true)}
                   badgeContent={cartTotalQuantity}
@@ -157,7 +185,7 @@ const SubHeader = () => {
       <div className="lower-part">
         <NavLink
           className={(navActive) =>
-            // {console.log("navActive", navActive)}
+            // console.log("navActive", navActive)
             navActive.isActive ? "isActive" : "navLink"
           }
           to="/"

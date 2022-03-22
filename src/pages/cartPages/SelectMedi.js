@@ -53,7 +53,7 @@ const SelectMedi = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const product = productsData.filter((element) => element.id == id);
-  console.log("product", product);
+  // console.log("product", product);
   const [selectPackage, setSelectPackage] = useState("disabled");
 
   const handleChange = (e) => {

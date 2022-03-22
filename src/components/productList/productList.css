@@ -137,7 +137,9 @@
 .selectOption {
   font-size: 13px;
   font-weight: 600;
-  margin-top: 15px;
+}
+p.selectOption {
+  margin-top: 0;
 }
 .selectOption:hover {
   color: white;
