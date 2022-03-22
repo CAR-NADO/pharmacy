@@ -20,16 +20,6 @@ const wishListReducer = (state = initialState, action) => {
         ...state,
         wishListItems: removeFromWishList,
       };
-    // case "REMOVE_WISHLIST":
-    //   const removeFromWishListItems = state.wishListItems.filter(
-    //     (cartItem) => cartItem.data.id !== action.payload.id
-    //   );
-
-    //   return {
-    //     ...state,
-    //     WishListItems: removeFromWishListItems,
-    //   };
-
     default:
       return state;
   }

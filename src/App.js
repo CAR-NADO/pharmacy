@@ -19,6 +19,7 @@ import Disclaimer from "./pages/footerPages/disclaimer/Disclaimer";
 import Refund from "./pages/footerPages/refund/Refund";
 import FakePharma from "./pages/footerPages/fakePharmacy/FakePharma";
 import Citra from "./pages/footerPages/citra100/Citra";
+import NearMe from "./pages/footerPages/chemistNearMe/NearMe";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/refund" element={<Refund />} />
           <Route path="/fakePharma" element={<FakePharma />} />
           <Route path="/citra" element={<Citra />} />
+          <Route path="/nearMe" element={<NearMe />} />
         </Routes>
       </BrowserRouter>
       <ToastContainer />

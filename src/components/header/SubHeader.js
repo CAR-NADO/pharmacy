@@ -11,6 +11,7 @@ import { ImCross } from "react-icons/im";
 import { useSelector, useDispatch } from "react-redux";
 import { removeItems, getTotal } from "../../redux/actions/action";
 import { productsData } from "../../data/productsData";
+import CloseIcon from "@mui/icons-material/Close";
 
 const SubHeader = () => {
   const [inputFilter, setInputFilter] = useState([]);
@@ -20,6 +21,11 @@ const SubHeader = () => {
       return value.name.toLowerCase().includes(searchWord.toLowerCase());
     });
     setInputFilter(newFilterData);
+    if (searchWord === "") {
+      setInputFilter([]);
+    } else {
+      setInputFilter(newFilterData);
+    }
   };
 
   const dispatch = useDispatch();
@@ -129,26 +135,52 @@ const SubHeader = () => {
               <React.Fragment key={anchor}>
                 <div>
                   <div className="subHeader-input-field">
-                    <input
-                      type="text"
-                      // value={inputFilter}
-                      placeholder="Search Product..."
-                      className="subHeaderInputField"
-                      onChange={(e) => {
-                        handleSearchInput(e);
-                      }}
-                    />
                     <div>
-                      <ImSearch className="search-icon" />
+                      <input
+                        type="text"
+                        // value={inputFilter}
+                        placeholder="Search Product..."
+                        className="subHeaderInputField"
+                        onChange={(e) => {
+                          handleSearchInput(e);
+                        }}
+                      />
+                      {inputFilter.length === 0 ? (
+                        <ImSearch className="input-search-icon" />
+                      ) : (
+                        <CloseIcon
+                          className="input-clear-icon"
+                          onClick={() => setInputFilter([])}
+                        />
+                      )}
                     </div>
                   </div>
-                  {inputFilter.length != 0 && (
-                    <div className="search-input-list">
-                      {inputFilter.map((val, id) => {
-                        return <p>{val.name}</p>;
-                      })}
-                    </div>
-                  )}
+                  <div className="search-input-list">
+                    {inputFilter.slice(0, 3).map((val) => {
+                      const { id, name, price, image } = val;
+                      // console.log("val", val);
+                      return (
+                        <Link
+                          to={`/SelectMedi/${id}`}
+                          className="search-nav-link"
+                        >
+                          <div className="search-list-parent-div" key={id}>
+                            <div className="search-list-left">
+                              <img
+                                src={image}
+                                alt="image"
+                                className="search-list-left-img"
+                              />
+                            </div>
+                            <div className="search-list-right-part">
+                              <h1>{name}</h1>
+                              <h2>{price}</h2>
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
                 <Badge
                   onClick={toggleDrawer(anchor, true)}

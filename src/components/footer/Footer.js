@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
         <div className="footer-header2">
           <h2>QUICK LINKS</h2>
-          <p>Chemist Near Me</p>
+          <p onClick={() => navigateFooter("/nearMe")}>Chemist Near Me</p>
           <p onClick={() => navigateFooter("/fakePharma")}>
             Fake Online Pharmacies
           </p>

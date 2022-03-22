@@ -1,0 +1,38 @@
+/* .near-me-parents-div {
+  border: 1px solid blue;
+} */
+.near-me-container {
+  /* border: 1px solid red; */
+  margin: 1rem 6rem;
+}
+.near-me-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  margin: 1.5rem 0;
+  letter-spacing: 0.25px;
+  color: rgb(13, 123, 197);
+}
+.near-me-container h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 1.5rem 0;
+  letter-spacing: 0.25px;
+}
+.near-me-container p {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: rgba(92, 91, 91, 0.925);
+  word-spacing: 1px;
+}
+.near-me-container .near-me-span1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(3, 103, 233);
+}
+.near-me-container .near-me-span2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(20, 206, 3, 0.829);
+}
