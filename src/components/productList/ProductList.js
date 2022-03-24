@@ -44,7 +44,7 @@ const ProductList = () => {
         <div className="headingText">
           <h1>Treatment Options at Online Pharmas</h1>
         </div>
-        <div className="parentContainer">
+        <div className="parentContainer flex-column-xs">
           {productsData.map((product) => {
             const { id, image, category, name, price } = product;
             return (

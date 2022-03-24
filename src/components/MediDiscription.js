@@ -16,7 +16,7 @@ const MediDiscription = () => {
   };
   return (
     <div className="container">
-      <div className="after-product-list">
+      <div className="after-product-list flex-column-xs">
         <div className="left-part">
           <img src={PharmaLogo6} alt="logo" className="pharmaLogo6" />
         </div>
@@ -441,7 +441,7 @@ const MediDiscription = () => {
             drug to reach your door on time.
           </p>
         </div>
-        <div className="left-side-text-right-side-image">
+        <div className="left-side-text-right-side-image flex-column-xs">
           <div className="left-side-text">
             <div className="tenthParagraph2">
               <p>
@@ -500,7 +500,7 @@ const MediDiscription = () => {
           </p>
         </div>
       </div>
-      <div className="eleventh-paragraph-img">
+      <div className="eleventh-paragraph-img flex-column-xs flex-column-sm">
         <div className="eleventh-paragraph-left-img">
           <img
             src={PharmaLogo9}

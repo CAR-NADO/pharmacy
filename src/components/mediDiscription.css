@@ -385,11 +385,11 @@
   border-bottom: 1px solid rgb(231, 231, 231);
 }
 /* .tenth-paragraph {
-    border: 1px solid orangered;
+  border: 1px solid orangered;
 } */
 .tenth-paragraph-header {
   text-decoration: underline;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0;
 }
 .tenth-paragraph-header h1 {
   letter-spacing: 2px;
@@ -403,7 +403,7 @@
 }
 .left-side-text {
   /* border: 1px solid blue; */
-  width: 70%;
+  width: 68%;
 }
 .right-side-image {
   /* border: 1px solid rgb(0, 163, 28); */
@@ -417,26 +417,29 @@
   font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
+  margin: 1rem 0;
 }
 .tenthParagraph2 {
   font-size: 16px;
   color: rgb(73, 73, 73);
-  letter-spacing: 0.5px;
+  word-spacing: 3px;
 }
 .tenthParagraph3 {
   font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
+  margin: 1rem 0;
 }
 .tenthParagraph4 {
   font-size: 16px;
   color: rgb(73, 73, 73);
-  letter-spacing: 0.5px;
+  word-spacing: 3px;
 }
 .tenthParagraph5 {
   font-size: 16px;
   color: rgb(73, 73, 73);
-  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  margin: 1rem 0;
 }
 .tenthParagraph6 {
   font-size: 16px;
@@ -447,6 +450,7 @@
   font-size: 16px;
   color: rgb(73, 73, 73);
   letter-spacing: 0.5px;
+  margin: 1rem 0;
 }
 .tenthParagraph1 span {
   color: rgb(85, 85, 85);
@@ -482,6 +486,12 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.eleventh-paragraph-left-img img {
+  width: 100%;
+}
+.eleventh-paragraph-right-img img {
+  width: 100%;
 }
 
 /*------- ********* ------*/
@@ -645,9 +655,7 @@
     width: 12rem;
     height: 12rem;
   }
-  .eleventh-paragraph-left-img {
-    width: auto;
-  }
+
   .eleventh-paragraph-right-img {
     width: auto;
   }

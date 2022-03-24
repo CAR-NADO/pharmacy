@@ -25,6 +25,7 @@ const cartReducer = (state = initialState, action) => {
         // console.log("item Index else ==>", itemIndex);
 
         const tempProduct = { ...action.payload, cartQuantity: 1 };
+        // console.log("tempProduct", tempProduct);
         toast(`${action.payload.data.name} added to cart`, {
           position: "top-center",
           type: "success",

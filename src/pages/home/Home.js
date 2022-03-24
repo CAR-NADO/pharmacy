@@ -99,7 +99,7 @@ const Home = () => {
       <div className="shop-imageContainer">
         <img src={PharmaLogo} alt="logo" width="100%" className="shop-image" />
       </div>
-      <div className="belowShopImage">
+      <div className="belowShopImage flex-column-xs">
         {cardData.map((data) => {
           const { id, Icon, title, disc } = data;
           return (

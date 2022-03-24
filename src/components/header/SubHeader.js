@@ -126,7 +126,7 @@ const SubHeader = () => {
   return (
     <>
       <header className="subHeader">
-        <div className="upper-part">
+        <div className="upper-part flex-column-xs">
           <div className="left-image">
             <img src={pharmaLogo} alt="logo" id="image" />
           </div>
